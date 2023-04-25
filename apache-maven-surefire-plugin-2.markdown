@@ -1,0 +1,109 @@
+---
+layout: post
+title: Apache Maven Surefire Plugin 2.22.0 Released
+date: '2018-06-17T10:39:55+00:00'
+permalink: apache-maven-surefire-plugin-2
+---
+<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
+<a href="http://maven.apache.org/plugins/maven-surefire-plugin/">Apache Maven Surefire Plugin, version 2.22.0</a>.</p>
+
+<p>The release contains 33 bug fixes.
+Again we received contributions from the community in form of bug reports
+and bug fixes.
+Thank you and keep them coming!</p>
+
+<p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-surefire-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;version&gt;</span>2.22.0<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for failsafe:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-failsafe-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;version&gt;</span>2.22.0<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for surefire-report:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-surefire-report-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;version&gt;</span>2.22.0<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
+
+
+<p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317927&amp;version=12343247">Release Notes &ndash; Maven Surefire &ndash; Version 2.22.0</a></p>
+
+<p>Bugs:</p>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1383">SUREFIRE-1383</a> &ndash; dependenciesToScan Does Not Leverage Classpath Elements</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1479">SUREFIRE-1479</a> &ndash; SurefireBooterForkException: The forked VM terminated without properly saying goodbye since 2.20.1</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1498">SUREFIRE-1498</a> &ndash; Surefire prints own logs &ldquo;Couldn&rsquo;t load group class&rdquo; to native stream.</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1503">SUREFIRE-1503</a> &ndash; Forked JVM immediately crashed on Unix/Linux due to new shutdown mechanism does not turn to the old shutdown mechanism</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1506">SUREFIRE-1506</a> &ndash; Sporadic NullPointerException in ConsoleOutputFileReporter#close()</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1512">SUREFIRE-1512</a> &ndash; ProcessInfo for Windows is prone to timezone offset changes</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1515">SUREFIRE-1515</a> &ndash; Standard output write fails for empty array</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1522">SUREFIRE-1522</a> &ndash; IndexOutOfBoundsException for System.out.write</li>
+</ul>
+
+
+<p>New Features:</p>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1330">SUREFIRE-1330</a> &ndash; JUnit 5 surefire-provider code donation</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1495">SUREFIRE-1495</a> &ndash; Encoding of TXT report file should be configured by ${project.reporting.outputEncoding} and MOJO parameter encoding</li>
+</ul>
+
+
+<p>Improvement:</p>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1490">SUREFIRE-1490</a> &ndash; Change header of the Failsafe Report</li>
+</ul>
+
+
+<p>Tasks:</p>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1487">SUREFIRE-1487</a> &ndash; ParallelComputerBuilderTest fails on overloaded system because internal delay are shorter than blocking time of JVM</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1504">SUREFIRE-1504</a> &ndash; switch from Git-WIP to Gitbox</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1510">SUREFIRE-1510</a> &ndash; Jenkins CI fails due to performance of Windows break concurrency of forked JVMs</li>
+<li><a href="https://issues.apache.org/jira/browse/SUREFIRE-1518">SUREFIRE-1518</a> &ndash; Upgrade version of plexus-java to 0.9.8</li>
+</ul>
+
+
+<p>Enjoy,</p>
+
+<p>-The Apache Maven team</p>
+</div>

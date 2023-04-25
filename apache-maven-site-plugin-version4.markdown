@@ -1,0 +1,68 @@
+---
+layout: post
+title: Apache Maven Site Plugin Version 3.12.0 Released
+date: '2022-04-20T18:37:48+00:00'
+permalink: apache-maven-site-plugin-version4
+---
+<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
+  <a href="https://maven.apache.org/plugins/maven-site-plugin/">Apache Maven Site Plugin, version 3.12.0</a>.</p>
+
+  <p>The Site Plugin is used to generate a site for the project. The generated site
+    also includes the project&rsquo;s reports that were configured in the POM.</p>
+
+  <p>You can download the appropriate sources etc. from the download page:</p>
+
+  <p><a href="https://maven.apache.org/plugins/maven-site-plugin/download.cgi">https://maven.apache.org/plugins/maven-site-plugin/download.cgi</a></p>
+
+  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-site-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.12.0<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+  <!-- more -->
+
+
+  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12351337&amp;styleName=Text&amp;projectId=12317923">Release Notes &ndash; Maven Site Plugin &ndash; Version 3.12.0</a></p>
+
+  <ul>
+    <li><p>Bug:</p>
+
+      <ul>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-857">MSITE-857</a> &ndash; Jetty engine fails to resolve web.xml DTD behind corporate proxy</li>
+      </ul>
+    </li>
+    <li><p>Tasks:</p>
+
+      <ul>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-828">MSITE-828</a> &ndash; Upgrade to Java 8</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-884">MSITE-884</a> &ndash; Drop/replace usage of Commons Lang 3</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-887">MSITE-887</a> &ndash; Deprecate templateFile parameter</li>
+      </ul>
+    </li>
+    <li><p>Dependency upgrades:</p>
+
+      <ul>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-829">MSITE-829</a> &ndash; Upgrade Jetty to 9.4.x</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-885">MSITE-885</a> &ndash; Upgrade Commons IO to 2.11.0</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-886">MSITE-886</a> &ndash; Upgrade Maven Wagon to 3.5.1</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-888">MSITE-888</a> &ndash; Upgrade to Maven 3.2.5</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-889">MSITE-889</a> &ndash; Upgrade Plexus Utils to 3.3.1</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-890">MSITE-890</a> &ndash; Upgrade Jetty to 9.4.46.v20220331</li>
+        <li><a href="https://issues.apache.org/jira/browse/MSITE-891">MSITE-891</a> &ndash; Upgrade plugins in IT</li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <p>Enjoy,</p>
+
+  <p>-The Apache Maven team</p>
+</div>

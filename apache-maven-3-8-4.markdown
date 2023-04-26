@@ -1,61 +1,47 @@
 ---
 layout: post
-title: Apache Maven 3.8.4 Released
+title: "Apache Maven 3.8.4 Released"
 date: '2021-11-20T17:38:56+00:00'
 permalink: apache-maven-3-8-4
+categories:
+  - Maven
+  - Maven-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the <a href="https://maven.apache.org/ref/3.8.4/">Apache Maven 3.8.4</a></p>
+The Apache Maven team is pleased to announce the release of the [Apache Maven 3.8.4](https://maven.apache.org/ref/3.8.4/)
 
-    <p>Apache Maven is a software project management and comprehension tool. Based on the concept
-        of a project object model (POM), Maven can manage a project&rsquo;s build, reporting and documentation
-        from a central piece of information.</p>
+Apache Maven is a software project management and comprehension tool. Based on the concept
+of a project object model (POM), Maven can manage a project's build, reporting and documentation
+from a central piece of information.
 
-    <p>Maven 3.8.4 is available via <a href="https://maven.apache.org/download.cgi">https://maven.apache.org/download.cgi</a></p>
+Maven 3.8.4 is available via https://maven.apache.org/download.cgi
 
-    <p>The core release is independent of plugin releases. Further releases of plugins will be made
-        separately.</p>
+The core release is independent of plugin releases. Further releases of plugins will be made
+separately.
 
-    <p>If you have any questions, please consult:</p>
+If you have any questions, please consult:
 
-    <ul>
-        <li>the web site: <a href="https://maven.apache.org/">https://maven.apache.org/</a></li>
-        <li>the maven-user mailing list: <a href="https://maven.apache.org/mailing-lists.html">https://maven.apache.org/mailing-lists.html</a></li>
-        <li>the reference documentation: <a href="https://maven.apache.org/ref/3.8.4/">https://maven.apache.org/ref/3.8.4/</a></li>
-    </ul>
+- the web site: https://maven.apache.org/
+- the maven-user mailing list: https://maven.apache.org/mailing-lists.html
+- the reference documentation: https://maven.apache.org/ref/3.8.4/
 
+Release Notes - Maven - Version 3.8.4
 
-    <p>Release Notes &ndash; Maven &ndash; Version 3.8.4</p>
+* Bugs:
 
-    <ul>
-        <li><p>Bugs:</p>
+    * [MNG-7270](https://issues.apache.org/jira/browse/MNG-7270) - Maven startup script (init) calls which(1) which is an external command
+    * [MNG-7285](https://issues.apache.org/jira/browse/MNG-7285) - [Regression] MavenProject.getArtifacts() not returning correct value across multiple threads
+    * [MNG-7300](https://issues.apache.org/jira/browse/MNG-7300) - [Regression] Reloading web application (Enter) fails due to java.lang.ClassNotFoundException
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7270">MNG-7270</a> &ndash; Maven startup script (init) calls which(1) which is an external command</li>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7285">MNG-7285</a> &ndash; [Regression] MavenProject.getArtifacts() not returning correct value across multiple threads</li>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7300">MNG-7300</a> &ndash; [Regression] Reloading web application (Enter) fails due to java.lang.ClassNotFoundException</li>
-            </ul>
-        </li>
-        <li><p>Task:</p>
+* Task:
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7312">MNG-7312</a> &ndash; Revert ThreadLocal approach from MNG-6843 and MNG-7251</li>
-            </ul>
-        </li>
-        <li><p>Dependency upgrade:</p>
+    * [MNG-7312](https://issues.apache.org/jira/browse/MNG-7312) - Revert ThreadLocal approach from MNG-6843 and MNG-7251
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7331">MNG-7331</a> &ndash; Upgrade Jansi to 2.4.0</li>
-            </ul>
-        </li>
-    </ul>
+* Dependency upgrade:
 
+    * [MNG-7331](https://issues.apache.org/jira/browse/MNG-7331) - Upgrade Jansi to 2.4.0
 
-    <p>For more information read <a href="https://maven.apache.org/docs/3.8.4/release-notes.html">https://maven.apache.org/docs/3.8.4/release-notes.html</a></p>
+For more information read https://maven.apache.org/docs/3.8.4/release-notes.html
 
-    <p>Enjoy!</p>
+Enjoy!
 
-    <ul>
-        <li>The Maven Team</li>
-    </ul>
-
-</div>
+- The Maven Team

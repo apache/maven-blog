@@ -1,86 +1,73 @@
 ---
-layout: post
-title: Apache Maven 3.8.5 Released
+layout: post 
+title: "Apache Maven 3.8.5 Released"
 date: '2022-03-13T18:15:00+00:00'
 permalink: apache-maven-3-8-5
+categories:
+  - Maven
+  - Maven-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the <a href="https://maven.apache.org/ref/3.8.5/">Apache Maven 3.8.5</a></p>
+The Apache Maven team is pleased to announce the release of the [Apache Maven 3.8.5](https://maven.apache.org/ref/3.8.5/)
 
-  <p>Apache Maven is a software project management and comprehension tool. Based on the concept
-    of a project object model (POM), Maven can manage a project&rsquo;s build, reporting and documentation
-    from a central piece of information.</p>
+Apache Maven is a software project management and comprehension tool. Based on the concept
+of a project object model (POM), Maven can manage a project's build, reporting and documentation
+from a central piece of information.
 
-  <p>Maven 3.8.5 is available via <a href="https://maven.apache.org/download.cgi">https://maven.apache.org/download.cgi</a></p>
+Maven 3.8.5 is available via https://maven.apache.org/download.cgi
 
-  <p>The core release is independent of plugin releases. Further releases of plugins will be made
-    separately.</p>
+The core release is independent of plugin releases. Further releases of plugins will be made
+separately.
 
-  <p>If you have any questions, please consult:</p>
+If you have any questions, please consult:
 
-  <ul>
-    <li>the web site: <a href="https://maven.apache.org/">https://maven.apache.org/</a></li>
-    <li>the maven-user mailing list: <a href="https://maven.apache.org/mailing-lists.html">https://maven.apache.org/mailing-lists.html</a></li>
-    <li>the reference documentation: <a href="https://maven.apache.org/ref/3.8.5/">https://maven.apache.org/ref/3.8.5/</a></li>
-  </ul>
+- the web site: https://maven.apache.org/
+- the maven-user mailing list: https://maven.apache.org/mailing-lists.html
+- the reference documentation: https://maven.apache.org/ref/3.8.5/
 
+Release Notes - Maven - Version 3.8.5
 
-  <p>Release Notes &ndash; Maven &ndash; Version 3.8.5</p>
+* Bugs:
 
-  <ul>
-    <li><p>Bugs:</p>
+    * [MNG-5180](https://issues.apache.org/jira/browse/MNG-5180) - Versioning's snapshot version list is not included in metadata merge
+    * [MNG-5561](https://issues.apache.org/jira/browse/MNG-5561) - Plugin relocation loses configuration
+    * [MNG-5982](https://issues.apache.org/jira/browse/MNG-5982) - The POM for ... is invalid, transitive dependencies ... while property was overriden
+    * [MNG-6326](https://issues.apache.org/jira/browse/MNG-6326) - Build continues when core extensions aren't found
+    * [MNG-6727](https://issues.apache.org/jira/browse/MNG-6727) - Using version range in parent and CI Friendly Version fails
+    * [MNG-6802](https://issues.apache.org/jira/browse/MNG-6802) - FileProfileActivator changes FileProfileActivator.exists which lets flattened resolveCiFriendliesOnly depending fail activating profile
+    * [MNG-7156](https://issues.apache.org/jira/browse/MNG-7156) - Parallel build can cause issues between clean and forked goals
+    * [MNG-7335](https://issues.apache.org/jira/browse/MNG-7335) - [Regression] Parallel build fails due to missing JAR artifacts in compilePath
+    * [MNG-7347](https://issues.apache.org/jira/browse/MNG-7347) - SessionScoped beans should be singletons for a given session
+    * [MNG-7357](https://issues.apache.org/jira/browse/MNG-7357) - All Maven Core JARs have unusual entry order
+    * [MNG-7362](https://issues.apache.org/jira/browse/MNG-7362) - DefaultArtifactResolver has spurious "Failure detected" INFO log
+    * [MNG-7374](https://issues.apache.org/jira/browse/MNG-7374) - Mutating RelocatedArtifact does not retain type
+    * [MNG-7386](https://issues.apache.org/jira/browse/MNG-7386) - ModelMerger$MergingList is not serializable
+    * [MNG-7402](https://issues.apache.org/jira/browse/MNG-7402) - BuildListCalculator never detaches the classloader
+    * [MNG-7417](https://issues.apache.org/jira/browse/MNG-7417) - Several classes do not set properties properly for building requests
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-5180">MNG-5180</a> &ndash; Versioning&rsquo;s snapshot version list is not included in metadata merge</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-5561">MNG-5561</a> &ndash; Plugin relocation loses configuration</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-5982">MNG-5982</a> &ndash; The POM for &hellip; is invalid, transitive dependencies &hellip; while property was overriden</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6326">MNG-6326</a> &ndash; Build continues when core extensions aren&rsquo;t found</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6727">MNG-6727</a> &ndash; Using version range in parent and CI Friendly Version fails</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6802">MNG-6802</a> &ndash; FileProfileActivator changes FileProfileActivator.exists which lets flattened resolveCiFriendliesOnly depending fail activating profile</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7156">MNG-7156</a> &ndash; Parallel build can cause issues between clean and forked goals</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7335">MNG-7335</a> &ndash; [Regression] Parallel build fails due to missing JAR artifacts in compilePath</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7347">MNG-7347</a> &ndash; SessionScoped beans should be singletons for a given session</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7357">MNG-7357</a> &ndash; All Maven Core JARs have unusual entry order</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7362">MNG-7362</a> &ndash; DefaultArtifactResolver has spurious &ldquo;Failure detected&rdquo; INFO log</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7374">MNG-7374</a> &ndash; Mutating RelocatedArtifact does not retain type</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7386">MNG-7386</a> &ndash; ModelMerger$MergingList is not serializable</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7402">MNG-7402</a> &ndash; BuildListCalculator never detaches the classloader</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7417">MNG-7417</a> &ndash; Several classes do not set properties properly for building requests</li>
-      </ul>
-    </li>
-    <li><p>New Features:</p>
+* New Features:
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7395">MNG-7395</a> &ndash; Support interpolation in extensions.xml</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7407">MNG-7407</a> &ndash; Introduce a ModelVersionProcessor component to make CI Friendly Versions pluggable</li>
-      </ul>
-    </li>
-    <li><p>Improvements:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6960">MNG-6960</a> &ndash; Use RuntimeInformation instead of reading properties</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7349">MNG-7349</a> &ndash; Limit relocation warning message to direct dependencies only</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7380">MNG-7380</a> &ndash; Don&rsquo;t log non-threadsafe warning if only building a single module</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7381">MNG-7381</a> &ndash; Shorten parallel builder thread name to artifactId, conditionally with groupId</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7385">MNG-7385</a> &ndash; Improve documentation on repository metadata</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7400">MNG-7400</a> &ndash; Allow more WorkspaceReaders to participate</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7408">MNG-7408</a> &ndash; Explain reporting plugin version automatic selection (in Maven 3)</li>
-      </ul>
-    </li>
-    <li><p>Dependency upgrades:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7370">MNG-7370</a> &ndash; Upgrade Maven Wagon to 3.5.1</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7384">MNG-7384</a> &ndash; Upgrade Maven JAR Plugin to 3.2.2</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-7428">MNG-7428</a> &ndash; Upgrade Maven Parent to 35</li>
-      </ul>
-    </li>
-  </ul>
+    * [MNG-7395](https://issues.apache.org/jira/browse/MNG-7395) - Support interpolation in extensions.xml
+    * [MNG-7407](https://issues.apache.org/jira/browse/MNG-7407) - Introduce a ModelVersionProcessor component to make CI Friendly Versions pluggable
 
 
-  <p>For more information read <a href="https://maven.apache.org/docs/3.8.5/release-notes.html">https://maven.apache.org/docs/3.8.5/release-notes.html</a></p>
+* Improvements:
 
-  <p>Enjoy!</p>
+    * [MNG-6960](https://issues.apache.org/jira/browse/MNG-6960) - Use RuntimeInformation instead of reading properties
+    * [MNG-7349](https://issues.apache.org/jira/browse/MNG-7349) - Limit relocation warning message to direct dependencies only
+    * [MNG-7380](https://issues.apache.org/jira/browse/MNG-7380) - Don't log non-threadsafe warning if only building a single module
+    * [MNG-7381](https://issues.apache.org/jira/browse/MNG-7381) - Shorten parallel builder thread name to artifactId, conditionally with groupId
+    * [MNG-7385](https://issues.apache.org/jira/browse/MNG-7385) - Improve documentation on repository metadata
+    * [MNG-7400](https://issues.apache.org/jira/browse/MNG-7400) - Allow more WorkspaceReaders to participate
+    * [MNG-7408](https://issues.apache.org/jira/browse/MNG-7408) - Explain reporting plugin version automatic selection (in Maven 3)
 
-  <ul>
-    <li>The Maven Team</li>
-  </ul>
+* Dependency upgrades:
+
+    * [MNG-7370](https://issues.apache.org/jira/browse/MNG-7370) - Upgrade Maven Wagon to 3.5.1
+    * [MNG-7384](https://issues.apache.org/jira/browse/MNG-7384) - Upgrade Maven JAR Plugin to 3.2.2
+    * [MNG-7428](https://issues.apache.org/jira/browse/MNG-7428) - Upgrade Maven Parent to 35
+
+For more information read https://maven.apache.org/docs/3.8.5/release-notes.html
+
+Enjoy!
+
+- The Maven Team

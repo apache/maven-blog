@@ -1,150 +1,126 @@
 ---
 layout: post
-title: Apache Maven 3.8.2 Released
+title: "Apache Maven 3.8.2 Released"
 date: '2021-08-15T13:34:44+00:00'
 permalink: apache-maven-3-8-2
+categories:
+  - Maven
+  - Maven-Releases
 ---
-<p>Apache Maven is a software project management and comprehension tool. Based on the concept
-    of a project object model (POM), Maven can manage a project&rsquo;s build, reporting and documentation
-    from a central piece of information.</p>
+The Apache Maven team is pleased to announce the release of the [Apache Maven 3.8.2](https://maven.apache.org/ref/3.8.2/)
 
-<p>Maven 3.8.2 is available via <a href="https://maven.apache.org/download.cgi">https://maven.apache.org/download.cgi</a></p>
+Apache Maven is a software project management and comprehension tool. Based on the concept
+of a project object model (POM), Maven can manage a project's build, reporting and documentation
+from a central piece of information.
 
-<p>The core release is independent of plugin releases. Further releases of plugins will be made
-    separately.</p>
+Maven 3.8.2 is available via https://maven.apache.org/download.cgi
 
-<p>If you have any questions, please consult:</p>
+The core release is independent of plugin releases. Further releases of plugins will be made
+separately.
 
-<ul>
-    <li>the web site: <a href="https://maven.apache.org/">https://maven.apache.org/</a></li>
-    <li>the maven-user mailing list: <a href="https://maven.apache.org/mailing-lists.html">https://maven.apache.org/mailing-lists.html</a></li>
-    <li>the reference documentation: <a href="https://maven.apache.org/ref/3.8.2/">https://maven.apache.org/ref/3.8.2/</a></li>
-</ul>
+If you have any questions, please consult:
 
+- the web site: https://maven.apache.org/
+- the maven-user mailing list: https://maven.apache.org/mailing-lists.html
+- the reference documentation: https://maven.apache.org/ref/3.8.2/
 
-<p>Release Notes &ndash; Maven &ndash; Version 3.8.2</p>
+Release Notes - Maven - Version 3.8.2
 
-<ul>
-    <li><p>Sub-task</p>
+* Sub-task
+    * [MNG-6281](https://issues.apache.org/jira/browse/MNG-6281) - ArrayIndexOutOfBoundsException caused by pom.xml with invalid/duplicate XML
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6281">MNG-6281</a> &ndash; ArrayIndexOutOfBoundsException caused by pom.xml with invalid/duplicate XML</li>
-        </ul>
-    </li>
-    <li><p>Bugs:</p>
+* Bugs:
+    * [MNG-4706](https://issues.apache.org/jira/browse/MNG-4706) - Multithreaded building can create bad files for downloaded artifacts in local repository
+    * [MNG-5307](https://issues.apache.org/jira/browse/MNG-5307) - NPE during resolution of dependencies - parallel mode
+    * [MNG-5315](https://issues.apache.org/jira/browse/MNG-5315) - Artifact resolution sporadically fails in parallel builds
+    * [MNG-5838](https://issues.apache.org/jira/browse/MNG-5838) - Maven on No-File-Lock Systems
+    * [MNG-5868](https://issues.apache.org/jira/browse/MNG-5868) - Adding serval times the same artifact via MavenProjectHelper (attachArtifact) keep adding to the List duplicate artifacts
+    * [MNG-6071](https://issues.apache.org/jira/browse/MNG-6071) - GetResource ('/) returns 'null' if build is started with -f
+    * [MNG-6216](https://issues.apache.org/jira/browse/MNG-6216) - ArrayIndexOutOfBoundsException when parsing POM
+    * [MNG-6239](https://issues.apache.org/jira/browse/MNG-6239) - Jansi messes up System.err and System.out
+    * [MNG-6380](https://issues.apache.org/jira/browse/MNG-6380) - Option -Dstyle.color=always doesn't force color output
+    * [MNG-6604](https://issues.apache.org/jira/browse/MNG-6604) - Intermittent failures while downloading GAVs from Nexus
+    * [MNG-6648](https://issues.apache.org/jira/browse/MNG-6648) - 'mavenrc_pre' script does not receive arguments like mavenrc in Bourne shell does
+    * [MNG-6719](https://issues.apache.org/jira/browse/MNG-6719) - mvn color output escape keys w/ "| tee xxx.log" on Win with git/bash
+    * [MNG-6737](https://issues.apache.org/jira/browse/MNG-6737) - StackOverflowError when version ranges are unsolvable and graph contains a cycle
+    * [MNG-6767](https://issues.apache.org/jira/browse/MNG-6767) - Plugin with ${project.groupId} resolved improperly
+    * [MNG-6819](https://issues.apache.org/jira/browse/MNG-6819) - NullPointerException for DefaultArtifactDescriptorReader.loadPom
+    * [MNG-6828](https://issues.apache.org/jira/browse/MNG-6828) - DependencyResolutionException breaks serialization
+    * [MNG-6842](https://issues.apache.org/jira/browse/MNG-6842) - ProjectBuilderTest uses Guava, but Guava is not defined in dependencies
+    * [MNG-6843](https://issues.apache.org/jira/browse/MNG-6843) - Parallel build fails due to missing JAR artifacts in compilePath
+    * [MNG-6850](https://issues.apache.org/jira/browse/MNG-6850) - Prevent printing the EXEC_DIR when it's just a disk letter
+    * [MNG-6921](https://issues.apache.org/jira/browse/MNG-6921) - Maven compile with properties ${artifactId} and ${project.build.finalName} occurs java.lang.NullPointerException
+    * [MNG-6937](https://issues.apache.org/jira/browse/MNG-6937) - StringSearchModelInterpolatorTest fails on symlinked paths
+    * [MNG-6964](https://issues.apache.org/jira/browse/MNG-6964) - Maven version sorting is internally inconsistent
+    * [MNG-6983](https://issues.apache.org/jira/browse/MNG-6983) - Plugin key can get out of sync with artifactId and groupId
+    * [MNG-7000](https://issues.apache.org/jira/browse/MNG-7000) - metadata.mdo contains invalid link to schema
+    * [MNG-7032](https://issues.apache.org/jira/browse/MNG-7032) - Option -B still showing formatting when used with --version
+    * [MNG-7034](https://issues.apache.org/jira/browse/MNG-7034) - StackOverflowError thrown if a cycle exists in BOM imports
+    * [MNG-7090](https://issues.apache.org/jira/browse/MNG-7090) - mvnDebug does not work on Java 11+
+    * [MNG-7127](https://issues.apache.org/jira/browse/MNG-7127) - NullPointerException in MavenCliTest.testStyleColors in JDK 16
+    * [MNG-7155](https://issues.apache.org/jira/browse/MNG-7155) - make sources jar reproducible (upgrade maven-source-plugin to 3.2.1)
+    * [MNG-7161](https://issues.apache.org/jira/browse/MNG-7161) - Error thrown during uninstalling of JAnsi
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-4706">MNG-4706</a> &ndash; Multithreaded building can create bad files for downloaded artifacts in local repository</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-5307">MNG-5307</a> &ndash; NPE during resolution of dependencies &ndash; parallel mode</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-5315">MNG-5315</a> &ndash; Artifact resolution sporadically fails in parallel builds</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-5838">MNG-5838</a> &ndash; Maven on No-File-Lock Systems</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-5868">MNG-5868</a> &ndash; Adding serval times the same artifact via MavenProjectHelper (attachArtifact) keep adding to the List duplicate artifacts</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6071">MNG-6071</a> &ndash; GetResource (&lsquo;/) returns &#8216;null&rsquo; if build is started with -f</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6216">MNG-6216</a> &ndash; ArrayIndexOutOfBoundsException when parsing POM</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6239">MNG-6239</a> &ndash; Jansi messes up System.err and System.out</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6380">MNG-6380</a> &ndash; Option -Dstyle.color=always doesn&rsquo;t force color output</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6604">MNG-6604</a> &ndash; Intermittent failures while downloading GAVs from Nexus</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6648">MNG-6648</a> &ndash; &lsquo;mavenrc_pre&rsquo; script does not receive arguments like mavenrc in Bourne shell does</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6719">MNG-6719</a> &ndash; mvn color output escape keys w/ &ldquo;| tee xxx.log&rdquo; on Win with git/bash</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6737">MNG-6737</a> &ndash; StackOverflowError when version ranges are unsolvable and graph contains a cycle</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6767">MNG-6767</a> &ndash; Plugin with ${project.groupId} resolved improperly</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6819">MNG-6819</a> &ndash; NullPointerException for DefaultArtifactDescriptorReader.loadPom</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6828">MNG-6828</a> &ndash; DependencyResolutionException breaks serialization</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6842">MNG-6842</a> &ndash; ProjectBuilderTest uses Guava, but Guava is not defined in dependencies</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6843">MNG-6843</a> &ndash; Parallel build fails due to missing JAR artifacts in compilePath</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6850">MNG-6850</a> &ndash; Prevent printing the EXEC_DIR when it&rsquo;s just a disk letter</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6921">MNG-6921</a> &ndash; Maven compile with properties ${artifactId} and ${project.build.finalName} occurs java.lang.NullPointerException</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6937">MNG-6937</a> &ndash; StringSearchModelInterpolatorTest fails on symlinked paths</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6964">MNG-6964</a> &ndash; Maven version sorting is internally inconsistent</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6983">MNG-6983</a> &ndash; Plugin key can get out of sync with artifactId and groupId</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7000">MNG-7000</a> &ndash; metadata.mdo contains invalid link to schema</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7032">MNG-7032</a> &ndash; Option -B still showing formatting when used with &mdash;version</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7034">MNG-7034</a> &ndash; StackOverflowError thrown if a cycle exists in BOM imports</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7090">MNG-7090</a> &ndash; mvnDebug does not work on Java 11+</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7127">MNG-7127</a> &ndash; NullPointerException in MavenCliTest.testStyleColors in JDK 16</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7155">MNG-7155</a> &ndash; make sources jar reproducible (upgrade maven-source-plugin to 3.2.1)</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7161">MNG-7161</a> &ndash; Error thrown during uninstalling of JAnsi</li>
-        </ul>
-    </li>
-    <li><p>New Feature</p>
+* New Feature
+    * [MNG-7149](https://issues.apache.org/jira/browse/MNG-7149) - Introduce MAVEN_DEBUG_ADDRESS in mvnDebug scripts
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7149">MNG-7149</a> &ndash; Introduce MAVEN_DEBUG_ADDRESS in mvnDebug scripts</li>
-        </ul>
-    </li>
-    <li><p>Improvements:</p>
+* Improvements:
+    * [MNG-2802](https://issues.apache.org/jira/browse/MNG-2802) - Concurrent-safe access to local Maven repository
+    * [MNG-6471](https://issues.apache.org/jira/browse/MNG-6471) - Parallel builder should use  the module name as thread name
+    * [MNG-6754](https://issues.apache.org/jira/browse/MNG-6754) - Set the same timestamp in multi module builds
+    * [MNG-6810](https://issues.apache.org/jira/browse/MNG-6810) - Remove profiles in maven-model
+    * [MNG-6811](https://issues.apache.org/jira/browse/MNG-6811) - Remove unnecessary filtering configuration
+    * [MNG-6816](https://issues.apache.org/jira/browse/MNG-6816) - Prefer System.lineSeparator() over system properties
+    * [MNG-6827](https://issues.apache.org/jira/browse/MNG-6827) - Replace deprecated StringUtils#defaultString() from Plexus Utils
+    * [MNG-6837](https://issues.apache.org/jira/browse/MNG-6837) - Simplify detection of the MAVEN_HOME and make it fully qualified on Windows
+    * [MNG-6844](https://issues.apache.org/jira/browse/MNG-6844) - Use StandardCharsets and remove outdated @SuppressWarnings
+    * [MNG-6853](https://issues.apache.org/jira/browse/MNG-6853) - Don't box primitives where it's not needed
+    * [MNG-6859](https://issues.apache.org/jira/browse/MNG-6859) - Build not easily reproducible when built from source release archive
+    * [MNG-6873](https://issues.apache.org/jira/browse/MNG-6873) - Inconsistent library versions notice
+    * [MNG-6967](https://issues.apache.org/jira/browse/MNG-6967) - Improve the command line output from maven-artifact
+    * [MNG-6987](https://issues.apache.org/jira/browse/MNG-6987) - Reorder groupId before artifactId when writing an exclusion using maven-model
+    * [MNG-7010](https://issues.apache.org/jira/browse/MNG-7010) - Omit "NB: JAVA_HOME should point to a JDK not a JRE" except when that is the problem
+    * [MNG-7064](https://issues.apache.org/jira/browse/MNG-7064) - Use HTTPS for schema location in global settings.xml
+    * [MNG-7080](https://issues.apache.org/jira/browse/MNG-7080) - Add a --color option
+    * [MNG-7170](https://issues.apache.org/jira/browse/MNG-7170) - Allow to associate pomFile/${basedir} with DefaultProjectBuilder.build(ModelSource, ...)
+    * [MNG-7180](https://issues.apache.org/jira/browse/MNG-7180) - Make --color option behave more like BSD/GNU grep's --color option
+    * [MNG-7181](https://issues.apache.org/jira/browse/MNG-7181) - Make --version support -q
+    * [MNG-7185](https://issues.apache.org/jira/browse/MNG-7185) - Describe explicit and recommended version for VersionRange.createFromVersionSpec()
+    * [MNG-7190](https://issues.apache.org/jira/browse/MNG-7190) - Load mavenrc from /usr/local/etc also in Bourne shell script
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-2802">MNG-2802</a> &ndash; Concurrent-safe access to local Maven repository</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6471">MNG-6471</a> &ndash; Parallel builder should use  the module name as thread name</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6754">MNG-6754</a> &ndash; Set the same timestamp in multi module builds</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6810">MNG-6810</a> &ndash; Remove profiles in maven-model</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6811">MNG-6811</a> &ndash; Remove unnecessary filtering configuration</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6816">MNG-6816</a> &ndash; Prefer System.lineSeparator() over system properties</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6827">MNG-6827</a> &ndash; Replace deprecated StringUtils#defaultString() from Plexus Utils</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6837">MNG-6837</a> &ndash; Simplify detection of the MAVEN_HOME and make it fully qualified on Windows</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6844">MNG-6844</a> &ndash; Use StandardCharsets and remove outdated @SuppressWarnings</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6853">MNG-6853</a> &ndash; Don&rsquo;t box primitives where it&rsquo;s not needed</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6859">MNG-6859</a> &ndash; Build not easily reproducible when built from source release archive</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6873">MNG-6873</a> &ndash; Inconsistent library versions notice</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6967">MNG-6967</a> &ndash; Improve the command line output from maven-artifact</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6987">MNG-6987</a> &ndash; Reorder groupId before artifactId when writing an exclusion using maven-model</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7010">MNG-7010</a> &ndash; Omit &ldquo;NB: JAVA_HOME should point to a JDK not a JRE&rdquo; except when that is the problem</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7064">MNG-7064</a> &ndash; Use HTTPS for schema location in global settings.xml</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7080">MNG-7080</a> &ndash; Add a &mdash;color option</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7170">MNG-7170</a> &ndash; Allow to associate pomFile/${basedir} with DefaultProjectBuilder.build(ModelSource, &hellip;)</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7180">MNG-7180</a> &ndash; Make &mdash;color option behave more like BSD/GNU grep&rsquo;s &mdash;color option</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7181">MNG-7181</a> &ndash; Make &mdash;version support -q</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7185">MNG-7185</a> &ndash; Describe explicit and recommended version for VersionRange.createFromVersionSpec()</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7190">MNG-7190</a> &ndash; Load mavenrc from /usr/local/etc also in Bourne shell script</li>
-        </ul>
-    </li>
-    <li><p>Tasks:</p>
+* Tasks:
+    * [MNG-6598](https://issues.apache.org/jira/browse/MNG-6598) - Maven 3.6.0 and Surefire problem
+    * [MNG-6884](https://issues.apache.org/jira/browse/MNG-6884) - Cleanup POM File after version upgrade
+    * [MNG-7172](https://issues.apache.org/jira/browse/MNG-7172) - Remove expansion of Jansi native libraries
+    * [MNG-7184](https://issues.apache.org/jira/browse/MNG-7184) - document .mavenrc/maven_pre.bat|cmd scripts and MAVEN_SKIP_RC environment variable
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6598">MNG-6598</a> &ndash; Maven 3.6.0 and Surefire problem</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6884">MNG-6884</a> &ndash; Cleanup POM File after version upgrade</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7172">MNG-7172</a> &ndash; Remove expansion of Jansi native libraries</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7184">MNG-7184</a> &ndash; document .mavenrc/maven_pre.bat|cmd scripts and MAVEN_SKIP_RC environment variable</li>
-        </ul>
-    </li>
-    <li><p>Dependency upgrades:</p>
+* Dependency upgrades:
+    * [MNG-6872](https://issues.apache.org/jira/browse/MNG-6872) - Found CVEs in your dependencies - plexus-utils (tests)
+    * [MNG-6874](https://issues.apache.org/jira/browse/MNG-6874) - Upgrade Maven Parent to 34
+    * [MNG-6886](https://issues.apache.org/jira/browse/MNG-6886) - Upgrade plexus-cipher 1.8
+    * [MNG-6993](https://issues.apache.org/jira/browse/MNG-6993) - Upgrade SLF4J to 1.7.30
+    * [MNG-7152](https://issues.apache.org/jira/browse/MNG-7152) - Upgrade Maven Resolver to 1.6.3
+    * [MNG-7177](https://issues.apache.org/jira/browse/MNG-7177) - Upgrade Maven Shared Utils to 3.3.4
+    * [MNG-7179](https://issues.apache.org/jira/browse/MNG-7179) - Upgrade Jansi to 2.3.3
+    * [MNG-7186](https://issues.apache.org/jira/browse/MNG-7186) - Upgrade Guice to 4.2.2
+    * [MNG-7196](https://issues.apache.org/jira/browse/MNG-7196) - Upgrade Jansi to 2.3.4
+    * [MNG-7198](https://issues.apache.org/jira/browse/MNG-7198) - Upgrade SLF4J to 1.7.32
 
-        <ul>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6872">MNG-6872</a> &ndash; Found CVEs in your dependencies &ndash; plexus-utils (tests)</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6874">MNG-6874</a> &ndash; Upgrade Maven Parent to 34</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6886">MNG-6886</a> &ndash; Upgrade plexus-cipher 1.8</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-6993">MNG-6993</a> &ndash; Upgrade SLF4J to 1.7.30</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7152">MNG-7152</a> &ndash; Upgrade Maven Resolver to 1.6.3</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7177">MNG-7177</a> &ndash; Upgrade Maven Shared Utils to 3.3.4</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7179">MNG-7179</a> &ndash; Upgrade Jansi to 2.3.3</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7186">MNG-7186</a> &ndash; Upgrade Guice to 4.2.2</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7196">MNG-7196</a> &ndash; Upgrade Jansi to 2.3.4</li>
-            <li><a href="https://issues.apache.org/jira/browse/MNG-7198">MNG-7198</a> &ndash; Upgrade SLF4J to 1.7.32</li>
-        </ul>
-    </li>
-    <li><p>Known Issues:</p>
+* Known Issues:
 
-        <ul>
-            <li>If any of your plugin mojos spawn new threads there might be a change in class loading as a result of the
-                fix for <a href="https://issues.apache.org/jira/browse/MNG-6843.">https://issues.apache.org/jira/browse/MNG-6843.</a>
-                See <a href="https://lists.apache.org/thread.html/r0777c9e364f93a609cb4c3da6e634139b9c400166e280856ee25ba72%40%3Cdev.maven.apache.org%3E">https://lists.apache.org/thread.html/r0777c9e364f93a609cb4c3da6e634139b9c400166e280856ee25ba72%40%3Cdev.maven.apache.org%3E</a>
-                with a possible fix for your plugin mojo as well as a potential general fix
-                in <a href="https://issues.apache.org/jira/browse/MNG-7212.">https://issues.apache.org/jira/browse/MNG-7212.</a></li>
-            <li>If any or your projects rely a Maven Core artifacts and your build is performed with Maven 3.8.1 or later a transitive
-                dependency parent of Sisu Plexus/CPI API 1.0 will inject a remote repository over HTTP which will be blocked by
-                default and (might) lead to build failures.
-                See <a href="https://lists.apache.org/thread.html/rda29028b2c8985f3b94e721d3014a948b312fbddf95ffaa4971acc03%40%3Cusers.maven.apache.org%3E">https://lists.apache.org/thread.html/rda29028b2c8985f3b94e721d3014a948b312fbddf95ffaa4971acc03%40%3Cusers.maven.apache.org%3E</a>
-                and <a href="https://issues.apache.org/jira/browse/MNG-7214">https://issues.apache.org/jira/browse/MNG-7214</a> for details.</li>
-        </ul>
-    </li>
-</ul>
+    * If any of your plugin mojos spawn new threads there might be a change in class loading as a result of the
+      fix for https://issues.apache.org/jira/browse/MNG-6843.
+      See https://lists.apache.org/thread.html/r0777c9e364f93a609cb4c3da6e634139b9c400166e280856ee25ba72%40%3Cdev.maven.apache.org%3E
+      with a possible fix for your plugin mojo as well as a potential general fix
+      in https://issues.apache.org/jira/browse/MNG-7212.
+    * If any or your projects rely a Maven Core artifacts and your build is performed with Maven 3.8.1 or later a transitive
+      dependency parent of Sisu Plexus/CPI API 1.0 will inject a remote repository over HTTP which will be blocked by
+      default and (might) lead to build failures.
+      See https://lists.apache.org/thread.html/rda29028b2c8985f3b94e721d3014a948b312fbddf95ffaa4971acc03%40%3Cusers.maven.apache.org%3E
+      and https://issues.apache.org/jira/browse/MNG-7214 for details.
 
+For more information read https://maven.apache.org/docs/3.8.2/release-notes.html
 
-<p>For more information read <a href="https://maven.apache.org/docs/3.8.2/release-notes.html">https://maven.apache.org/docs/3.8.2/release-notes.html</a></p>
+Enjoy!
 
-<p>Enjoy!</p>
-
-<ul>
-    <li>The Maven Team</li>
-</ul>
+- The Maven Team

@@ -1,80 +1,72 @@
 ---
 layout: post
-title: Apache Maven 3.6.3 Released
+title: "Apache Maven 3.6.3 Released"
 date: '2019-11-26T21:23:36+00:00'
-permalink: apache-maven-3-6-3
+permalink: apache-maven-3-6.3
+categories:
+  - Maven
+  - Maven-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the Apache
-  Maven 3.6.3.</p>
+The Apache Maven team is pleased to announce the release of the Apache
+Maven 3.6.3.
 
-  <p>Apache Maven is a software project management and comprehension tool. Based
-    on the concept of a project object model (POM), Maven can manage a
-    project&rsquo;s build, reporting and documentation from a central piece of
-    information.</p>
+Apache Maven is a software project management and comprehension tool. Based
+on the concept of a project object model (POM), Maven can manage a
+project's build, reporting and documentation from a central piece of
+information.
 
-  <p>You can find out more about Apache Maven at <a href="https://maven.apache.org">https://maven.apache.org</a></p>
+You can find out more about Apache Maven at https://maven.apache.org
 
-  <p>You can download the appropriate sources etc. from
-    the <a href="https://maven.apache.org/download.cgi">download page</a></p>
+You can download the appropriate sources etc. from
+the [download page](https://maven.apache.org/download.cgi)
 
-  <!-- more -->
+<!-- more -->
 
+## Overview about the changes
 
-  <h2>Overview about the changes</h2>
+- This is a regression release to fix some critical issues shipped with 3.6.2.
+- Some license issues on binary distribution have been fixed.
+- This Maven distribution is now Reproducible: if you build from source archive, with JDK 8,
+  on Windows, with `mvn -DbuildNumber=cecedd343002696d0abb50b32b541b8a6ba2883f package` you’ll
+  get bit-by-bit identical output that you can check with sha512 fingerprints.
+  If you’re building on any Unix system, you’ll need to add `-Dline.separator=$'\r\n'`.
+  See the https://maven.apache.org/guides/mini/guide-reproducible-builds.html for more details.
 
-  <ul>
-    <li>This is a regression release to fix some critical issues shipped with 3.6.2.</li>
-    <li>Some license issues on binary distribution have been fixed.</li>
-    <li>This Maven distribution is now Reproducible: if you build from source archive, with JDK 8,
-      on Windows, with <code>mvn -DbuildNumber=cecedd343002696d0abb50b32b541b8a6ba2883f package</code> you’ll
-      get bit-by-bit identical output that you can check with sha512 fingerprints.
-      If you’re building on any Unix system, you’ll need to add <code>-Dline.separator=$'\r\n'</code>.
-      See the <a href="https://maven.apache.org/guides/mini/guide-reproducible-builds.html">https://maven.apache.org/guides/mini/guide-reproducible-builds.html</a> for more details.</li>
-  </ul>
-
-
-  <p>For more information read <a href="https://maven.apache.org/docs/3.6.3/release-notes.html">https://maven.apache.org/docs/3.6.3/release-notes.html</a></p>
-
-  <h2>Complete Release Notes</h2>
-
-  <ul>
-    <li><p>Sub-tasks:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6779">MNG-6779</a> &ndash; fix jcl-over-slf4j license: Apache 2.0 instead of MIT</li>
-      </ul>
-    </li>
-    <li><p>Bugs</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6584">MNG-6584</a> &ndash; Maven version 3.6.0 does not show ReasonPhrase anymore</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6759">MNG-6759</a> &ndash; [REGRESSION] Maven fails to use <code>&lt;repositories&gt;</code> section from dependency when resolving transitive dependencies in some cases</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6760">MNG-6760</a> &ndash; [REGRESSION] ExclusionArtifactFilter result invalid when wildcard exclusion is followed by other exclusions</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6765">MNG-6765</a> &ndash; [Regression] tycho pom-less builds fails with 3.6.2</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6771">MNG-6771</a> &ndash; Fix license issues on binary distribution</li>
-      </ul>
-    </li>
-    <li><p>Improvements:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6778">MNG-6778</a> &ndash; Use https for schemaLocations</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6799">MNG-6799</a> &ndash; avoid model interpolation instability risk: ensure StringVisitorModelInterpolator replaces StringSearchModelInterpolator</li>
-      </ul>
-    </li>
-    <li><p>Tasks:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6777">MNG-6777</a> &ndash; Remove duplicate resolveFile methods</li>
-        <li><a href="https://issues.apache.org/jira/browse/MNG-6789">MNG-6789</a> &ndash; Make Maven distribution build Reproducible</li>
-      </ul>
-    </li>
-  </ul>
+For more information read https://maven.apache.org/docs/3.6.3/release-notes.html
 
 
-  <p>See <a href="../../docs/history.html">complete release notes for all versions</a></p>
+## Complete Release Notes
 
-  <ul>
-    <li>The Apache Maven Team.</li>
-  </ul>
+* Sub-tasks:
 
-</div>
+    * [MNG-6779](https://issues.apache.org/jira/browse/MNG-6779) - fix jcl-over-slf4j license: Apache 2.0 instead of MIT
+
+* Bugs
+
+    * [MNG-6584](https://issues.apache.org/jira/browse/MNG-6584) - Maven version 3.6.0 does not show ReasonPhrase anymore
+    * [MNG-6759](https://issues.apache.org/jira/browse/MNG-6759) - [REGRESSION] Maven fails to use `<repositories>` section from dependency when resolving transitive dependencies in some cases
+    * [MNG-6760](https://issues.apache.org/jira/browse/MNG-6760) - [REGRESSION] ExclusionArtifactFilter result invalid when wildcard exclusion is followed by other exclusions
+    * [MNG-6765](https://issues.apache.org/jira/browse/MNG-6765) - [Regression] tycho pom-less builds fails with 3.6.2
+    * [MNG-6771](https://issues.apache.org/jira/browse/MNG-6771) - Fix license issues on binary distribution
+
+* Improvements:
+
+    * [MNG-6778](https://issues.apache.org/jira/browse/MNG-6778) - Use https for schemaLocations
+    * [MNG-6799](https://issues.apache.org/jira/browse/MNG-6799) - avoid model interpolation instability risk: ensure StringVisitorModelInterpolator replaces StringSearchModelInterpolator
+
+* Tasks:
+
+    * [MNG-6777](https://issues.apache.org/jira/browse/MNG-6777) - Remove duplicate resolveFile methods
+    * [MNG-6789](https://issues.apache.org/jira/browse/MNG-6789) - Make Maven distribution build Reproducible
+
+
+See [complete release notes for all versions][5]
+
+- The Apache Maven Team.
+
+
+[0]: ../../download.html
+[1]: ../../plugins/index.html
+[2]: https://maven.apache.org/
+[4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&version=12346152
+[5]: ../../docs/history.html

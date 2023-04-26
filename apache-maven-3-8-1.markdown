@@ -1,69 +1,56 @@
 ---
 layout: post
-title: Apache Maven 3.8.1 Released
+title: "Apache Maven 3.8.1 Released"
 date: '2021-04-04T19:26:21+00:00'
 permalink: apache-maven-3-8-1
+categories:
+  - Maven
+  - Maven-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the <a href="https://maven.apache.org/ref/3.8.1/">Apache Maven 3.8.1</a></p>
+The Apache Maven team is pleased to announce the release of the [Apache Maven 3.8.1](https://maven.apache.org/ref/3.8.1/)
 
-    <p>Apache Maven is a software project management and comprehension tool. Based on the concept
-        of a project object model (POM), Maven can manage a project&rsquo;s build, reporting and documentation
-        from a central piece of information.</p>
+Apache Maven is a software project management and comprehension tool. Based on the concept
+of a project object model (POM), Maven can manage a project's build, reporting and documentation
+from a central piece of information.
 
-    <p>Maven 3.8.1 is available via <a href="https://maven.apache.org/download.cgi">https://maven.apache.org/download.cgi</a></p>
+Maven 3.8.1 is available via https://maven.apache.org/download.cgi
 
-    <p>The core release is independent of plugin releases. Further releases of plugins will be made
-        separately.</p>
+The core release is independent of plugin releases. Further releases of plugins will be made
+separately.
 
-    <p>If you have any questions, please consult:</p>
+If you have any questions, please consult:
 
-    <ul>
-        <li>the web site: <a href="https://maven.apache.org/">https://maven.apache.org/</a></li>
-        <li>the maven-user mailing list: <a href="https://maven.apache.org/mailing-lists.html">https://maven.apache.org/mailing-lists.html</a></li>
-        <li>the reference documentation: <a href="https://maven.apache.org/ref/3.8.1/">https://maven.apache.org/ref/3.8.1/</a></li>
-    </ul>
+- the web site: https://maven.apache.org/
+- the maven-user mailing list: https://maven.apache.org/mailing-lists.html
+- the reference documentation: https://maven.apache.org/ref/3.8.1/
 
+RELEASE DETAILS
 
-    <p>RELEASE DETAILS</p>
+This release with CVE fixes is a result based on the findings and feedback of Jonathan Leitschuh and Olaf Flebbe.
 
-    <p>This release with CVE fixes is a result based on the findings and feedback of Jonathan Leitschuh and Olaf Flebbe.</p>
+One of the changes that might impact your builds is the way custom repositories defined in dependency
+POMs will be handled.
+By default external insecure repositories will now be blocked (localhost over HTTP will still work).
+Configuration can be adjusted via the conf/settings.xml.
 
-    <p>One of the changes that might impact your builds is the way custom repositories defined in dependency
-        POMs will be handled.
-        By default external insecure repositories will now be blocked (localhost over HTTP will still work).
-        Configuration can be adjusted via the conf/settings.xml.</p>
+Release Notes - Maven - Version 3.8.1
 
-    <p>Release Notes &ndash; Maven &ndash; Version 3.8.1</p>
+* Bug:
+    * [MNG-7128](https://issues.apache.org/jira/browse/MNG-7128) - improve error message when blocked repository defined in build POM
 
-    <ul>
-        <li><p>Bug:</p>
+* New Features:
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7128">MNG-7128</a> &ndash; improve error message when blocked repository defined in build POM</li>
-            </ul>
-        </li>
-        <li><p>New Features:</p>
+    * [MNG-7116](https://issues.apache.org/jira/browse/MNG-7116) - Add support for mirror selector on external:http:*
+    * [MNG-7117](https://issues.apache.org/jira/browse/MNG-7117) - Add support for blocking mirrors
+    * [MNG-7118](https://issues.apache.org/jira/browse/MNG-7118) - Block external HTTP repositories by default
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7116">MNG-7116</a> &ndash; Add support for mirror selector on external:<a href="http:*">http:*</a></li>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7117">MNG-7117</a> &ndash; Add support for blocking mirrors</li>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7118">MNG-7118</a> &ndash; Block external HTTP repositories by default</li>
-            </ul>
-        </li>
-        <li><p>Dependency upgrades:</p>
+* Dependency upgrades:
 
-            <ul>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7119">MNG-7119</a> &ndash; Upgrade Maven Wagon to 3.4.3</li>
-                <li><a href="https://issues.apache.org/jira/browse/MNG-7123">MNG-7123</a> &ndash; Upgrade Maven Resolver to 1.6.2</li>
-            </ul>
-        </li>
-    </ul>
+    * [MNG-7119](https://issues.apache.org/jira/browse/MNG-7119) - Upgrade Maven Wagon to 3.4.3
+    * [MNG-7123](https://issues.apache.org/jira/browse/MNG-7123) - Upgrade Maven Resolver to 1.6.2
 
+For more information read https://maven.apache.org/docs/3.8.1/release-notes.html
 
-    <p>For more information read <a href="https://maven.apache.org/docs/3.8.1/release-notes.html">https://maven.apache.org/docs/3.8.1/release-notes.html</a></p>
+Enjoy!
 
-    <p>Enjoy!</p>
-
-    <ul>
-        <li>The Maven Team</li>
-    </ul>
+- The Maven Team

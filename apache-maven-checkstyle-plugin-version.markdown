@@ -1,75 +1,60 @@
 ---
 layout: post
-title: Apache Maven Checkstyle Plugin Version 3.1.0 Released
+title: "Apache Maven Checkstyle Plugin Version 3.1.0 Released"
 date: '2019-05-30T12:31:02+00:00'
 permalink: apache-maven-checkstyle-plugin-version
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Maven team is pleased to announce the release of the
-    <a href="http://maven.apache.org/plugins/maven-checkstyle-plugin/">Apache Maven Checkstyle Plugin, version 3.1.0</a>.</p>
+The Maven team is pleased to announce the release of the
+[Apache Maven Checkstyle Plugin, version 3.1.0](https://maven.apache.org/plugins/maven-checkstyle-plugin/).
 
-    <p>The Checkstyle Plugin generates a report regarding the code style used by the
-        developers. For more information about Checkstyle, see
-        <a href="http://checkstyle.sourceforge.net/.">http://checkstyle.sourceforge.net/.</a></p>
+The Checkstyle Plugin generates a report regarding the code style used by the
+developers. For more information about Checkstyle, see
+https://checkstyle.sourceforge.net/.
 
-    <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-    <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-checkstyle-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.1.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-checkstyle-plugin</artifactId>
+  <version>3.1.0</version>
+</plugin>
+``` 
 
+<!-- more -->
 
-    <p></p>
+[Release Notes - Apache Maven Checkstyle Plugin - Version 3.1.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317223&version=12342397)
 
-    <!-- more -->
+You can download the appropriate sources etc. from the download page:
 
+https://maven.apache.org/plugins/maven-checkstyle-plugin/download.cgi
 
-    <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317223&amp;version=12342397">Release Notes &ndash; Apache Maven Checkstyle Plugin &ndash; Version 3.1.0</a></p>
+Bugs:
 
-    <p>You can download the appropriate sources etc. from the download page:</p>
+* [MCHECKSTYLE-323](https://issues.apache.org/jira/browse/MCHECKSTYLE-323) - usage of checkstyle 7.0 (jdk8 is required)
+* [MCHECKSTYLE-344](https://issues.apache.org/jira/browse/MCHECKSTYLE-344) - StringIndexOutOfBoundsException in RuleUtil
+* [MCHECKSTYLE-347](https://issues.apache.org/jira/browse/MCHECKSTYLE-347) - StringIndexOutOfBoundsException when checkstyle.violation.ignore set to empty value
+* [MCHECKSTYLE-365](https://issues.apache.org/jira/browse/MCHECKSTYLE-365) - Site Report, Rules: Violation count incorrect for duplicate rules when one uses default severity
 
-    <p><a href="https://maven.apache.org/plugins/maven-checkstyle-plugin/download.cgi">https://maven.apache.org/plugins/maven-checkstyle-plugin/download.cgi</a></p>
+Improvements:
 
-    <p>Bugs:</p>
+* [MCHECKSTYLE-326](https://issues.apache.org/jira/browse/MCHECKSTYLE-326) - Running mvn install works first time second it does not
+* [MCHECKSTYLE-350](https://issues.apache.org/jira/browse/MCHECKSTYLE-350) - Lock version of animal-sniffer-maven-plugin
+* [MCHECKSTYLE-353](https://issues.apache.org/jira/browse/MCHECKSTYLE-353) - Don't resolve any dependencies
+* [MCHECKSTYLE-374](https://issues.apache.org/jira/browse/MCHECKSTYLE-374) - Replace deprecated methods in Checkstyle
+* [MCHECKSTYLE-375](https://issues.apache.org/jira/browse/MCHECKSTYLE-375) - Upgrade all test XML doctypes
 
-    <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-323">MCHECKSTYLE-323</a> &ndash; usage of checkstyle 7.0 (jdk8 is required)</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-344">MCHECKSTYLE-344</a> &ndash; StringIndexOutOfBoundsException in RuleUtil</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-347">MCHECKSTYLE-347</a> &ndash; StringIndexOutOfBoundsException when checkstyle.violation.ignore set to empty value</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-365">MCHECKSTYLE-365</a> &ndash; Site Report, Rules: Violation count incorrect for duplicate rules when one uses default severity</li>
-    </ul>
+Dependency upgrades:
 
+* [MCHECKSTYLE-349](https://issues.apache.org/jira/browse/MCHECKSTYLE-349) - Upgrade to parent pom 31
+* [MCHECKSTYLE-359](https://issues.apache.org/jira/browse/MCHECKSTYLE-359) - Upgrade maven-plugins parent to version 32
+* [MCHECKSTYLE-360](https://issues.apache.org/jira/browse/MCHECKSTYLE-360) - Upgrade maven-site-plugin to 3.7.1 for integration tests
+* [MCHECKSTYLE-366](https://issues.apache.org/jira/browse/MCHECKSTYLE-366) - Upgrade checkstyle to a more recent version
 
-    <p>Improvements:</p>
+Enjoy,
 
-    <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-326">MCHECKSTYLE-326</a> &ndash; Running mvn install works first time second it does not</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-350">MCHECKSTYLE-350</a> &ndash; Lock version of animal-sniffer-maven-plugin</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-353">MCHECKSTYLE-353</a> &ndash; Don&rsquo;t resolve any dependencies</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-374">MCHECKSTYLE-374</a> &ndash; Replace deprecated methods in Checkstyle</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-375">MCHECKSTYLE-375</a> &ndash; Upgrade all test XML doctypes</li>
-    </ul>
-
-
-    <p>Dependency upgrades:</p>
-
-    <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-349">MCHECKSTYLE-349</a> &ndash; Upgrade to parent pom 31</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-359">MCHECKSTYLE-359</a> &ndash; Upgrade maven-plugins parent to version 32</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-360">MCHECKSTYLE-360</a> &ndash; Upgrade maven-site-plugin to 3.7.1 for integration tests</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCHECKSTYLE-366">MCHECKSTYLE-366</a> &ndash; Upgrade checkstyle to a more recent version</li>
-    </ul>
-
-
-    <p>Enjoy,</p>
-
-    <p>-The Maven team</p>
-</div>
+-The Maven team
 

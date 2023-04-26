@@ -1,75 +1,57 @@
 ---
 layout: post
-title: Apache Maven Assembly Plugin Version 3.3.0 Released
+title: "Apache Maven Assembly Plugin Version 3.3.0 Released"
 date: '2020-05-01T13:00:00+00:00'
 permalink: apache-maven-assembly-plugin-version1
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the <a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Apache
-Maven Assembly Plugin, version 3.3.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the [Apache
+Maven Assembly Plugin, version 3.3.0](https://maven.apache.org/plugins/maven-assembly-plugin/).
 
-<p>The Assembly Plugin for Maven is primarily intended to allow users to aggregate
+The Assembly Plugin for Maven is primarily intended to allow users to aggregate
 the project output along with its dependencies, modules, site documentation,
-and other files into a single distributable archive.</p>
+and other files into a single distributable archive.
 
-<p>You can download the appropriate sources etc. from the <a href="https://maven.apache.org/plugins/maven-assembly-plugin/download.cgi">download page</a>.</p>
+You can download the appropriate sources etc. from the [download page](https://maven.apache.org/plugins/maven-assembly-plugin/download.cgi).
 
-<p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-assembly-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.3.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-assembly-plugin</artifactId>
+  <version>3.3.0</version>
+</plugin>
+```
 
 <!-- more -->
 
+[Release Notes - Maven Assembly Plugin - Version 3.3.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317220&version=12344774)
 
-<p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317220&amp;version=12344774">Release Notes &ndash; Maven Assembly Plugin &ndash; Version 3.3.0</a></p>
+* Bugs:
 
-<ul>
-<li><p>Bugs:</p>
+    * [MASSEMBLY-879](https://issues.apache.org/jira/browse/MASSEMBLY-879) - useDefaultExcludes has no effect in dependencySet/unpack
+    * [MASSEMBLY-920](https://issues.apache.org/jira/browse/MASSEMBLY-920) - ContainerDescriptorHandler for MetaInf-Services breaks folder structure
+    * [MASSEMBLY-932](https://issues.apache.org/jira/browse/MASSEMBLY-932) - resource filtering skipped for resources in the current project
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-879">MASSEMBLY-879</a> &ndash; useDefaultExcludes has no effect in dependencySet/unpack</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-920">MASSEMBLY-920</a> &ndash; ContainerDescriptorHandler for MetaInf-Services breaks folder structure</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-932">MASSEMBLY-932</a> &ndash; resource filtering skipped for resources in the current project</li>
-</ul>
-</li>
-<li><p>New Features:</p>
+* New Features:
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-922">MASSEMBLY-922</a> &ndash; allow to override UID/GID and user name and group name for files stored in TAR (and other formats that store UID/GID)</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-927">MASSEMBLY-927</a> &ndash; Support for properties mapping on executions of maven-assembly-plugin</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-934">MASSEMBLY-934</a> &ndash; Support concatenation of files</li>
-</ul>
-</li>
-<li><p>Improvements:</p>
+    * [MASSEMBLY-922](https://issues.apache.org/jira/browse/MASSEMBLY-922) - allow to override UID/GID and user name and group name for files stored in TAR (and other formats that store UID/GID)
+    * [MASSEMBLY-927](https://issues.apache.org/jira/browse/MASSEMBLY-927) - Support for properties mapping on executions of maven-assembly-plugin
+    * [MASSEMBLY-934](https://issues.apache.org/jira/browse/MASSEMBLY-934) - Support concatenation of files
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-765">MASSEMBLY-765</a> &ndash; add property groupIdPath</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-849">MASSEMBLY-849</a> &ndash; Add nonFilteredFileExtensions to avoid filtering of binary files</li>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-933">MASSEMBLY-933</a> &ndash; make build Reproducible</li>
-</ul>
-</li>
-<li><p>Dependency upgrade:</p>
+* Improvements:
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-924">MASSEMBLY-924</a> &ndash; Upgrade commons-compress to 1.19</li>
-</ul>
-</li>
-</ul>
+    * [MASSEMBLY-765](https://issues.apache.org/jira/browse/MASSEMBLY-765) - add property groupIdPath
+    * [MASSEMBLY-849](https://issues.apache.org/jira/browse/MASSEMBLY-849) - Add nonFilteredFileExtensions to avoid filtering of binary files
+    * [MASSEMBLY-933](https://issues.apache.org/jira/browse/MASSEMBLY-933) - make build Reproducible
 
+* Dependency upgrade:
 
-<p>Enjoy,</p>
+    * [MASSEMBLY-924](https://issues.apache.org/jira/browse/MASSEMBLY-924) - Upgrade commons-compress to 1.19
 
-<p>-The Apache Maven team</p>
-</div>
+Enjoy,
+
+-The Apache Maven team

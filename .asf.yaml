@@ -1,0 +1,15 @@
+# see https://s.apache.org/asfyaml
+publish:
+  whoami:    maven-blog
+  type:      blog
+github:
+  description: "Apache Maven Blog"
+  homepage: https://blogs.apache.org/maven/
+  labels:
+    - apache
+    - maven
+    - blog
+  enabled_merge_buttons:
+    squash: true
+    merge: false
+    rebase: true

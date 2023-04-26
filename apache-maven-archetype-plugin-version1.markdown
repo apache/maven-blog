@@ -1,69 +1,53 @@
 ---
 layout: post
-title: Apache Maven Archetype Plugin, Version 3.2.0 Released
+title: "Apache Maven Archetype Plugin 3.2.0 Released"
 date: '2020-07-22T22:35:55+00:00'
 permalink: apache-maven-archetype-plugin-version1
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/archetype/maven-archetype-plugin/">Apache Maven Archetype Plugin, version 3.2.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Archetype Plugin, version 3.2.0](https://maven.apache.org/archetype/maven-archetype-plugin/).
 
-  <p>In short, Archetype is a Maven project templating toolkit. An archetype is defined as an original pattern or model from which all other things of the same kind are made. The names fits as we are trying to provide a system that provides a consistent means of generating Maven projects. Archetype will help authors create Maven project templates for users, and provides users with the means to generate parameterized versions of those project templates.</p>
+In short, Archetype is a Maven project templating toolkit. An archetype is defined as an original pattern or model from which all other things of the same kind are made. The names fits as we are trying to provide a system that provides a consistent means of generating Maven projects. Archetype will help authors create Maven project templates for users, and provides users with the means to generate parameterized versions of those project templates.
 
-  <p><a href="https://maven.apache.org/archetype/maven-archetype-plugin/index.html">https://maven.apache.org/archetype/maven-archetype-plugin/index.html</a></p>
+https://maven.apache.org/archetype/maven-archetype-plugin/index.html
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-archetype-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.2.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-archetype-plugin</artifactId>
+  <version>3.2.0</version>
+</plugin>
+```
 
+You can download the appropriate sources etc. from the [download page](https://maven.apache.org/plugins/maven-archetype-plugin/download.cgi).
 
-  <p>You can download the appropriate sources etc. from the <a href="https://maven.apache.org/plugins/maven-archetype-plugin/download.cgi">download page</a>.</p>
+<!-- more -->
 
-  <!-- more -->
+[Release Notes - Maven Archetype Plugin - Version 3.2.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317122&version=12346641)
 
+* Bug:
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317122&amp;version=12346641">Release Notes &ndash; Maven Archetype Plugin &ndash; Version 3.2.0</a></p>
+    * [ARCHETYPE-585](https://issues.apache.org/jira/browse/ARCHETYPE-585) - Missing null check causes NullPointerException
 
-  <ul>
-    <li><p>Bug:</p>
+* New Feature:
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-585">ARCHETYPE-585</a> &ndash; Missing null check causes NullPointerException</li>
-      </ul>
-    </li>
-    <li><p>New Feature:</p>
+    * [ARCHETYPE-590](https://issues.apache.org/jira/browse/ARCHETYPE-590) - support Reproducible Builds for archetype:jar
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-590">ARCHETYPE-590</a> &ndash; support Reproducible Builds for archetype:jar</li>
-      </ul>
-    </li>
-    <li><p>Improvements:</p>
+* Improvements:
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-583">ARCHETYPE-583</a> &ndash; Skip parent non-archetype project when updating local catalog</li>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-586">ARCHETYPE-586</a> &ndash; make build Reproducible</li>
-      </ul>
-    </li>
-    <li><p>Dependency upgrades:</p>
+    * [ARCHETYPE-583](https://issues.apache.org/jira/browse/ARCHETYPE-583) - Skip parent non-archetype project when updating local catalog
+    * [ARCHETYPE-586](https://issues.apache.org/jira/browse/ARCHETYPE-586) - make build Reproducible
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-594">ARCHETYPE-594</a> &ndash; Update easymock</li>
-        <li><a href="https://issues.apache.org/jira/browse/ARCHETYPE-596">ARCHETYPE-596</a> &ndash; Update xmlunit</li>
-      </ul>
-    </li>
-  </ul>
+* Dependency upgrades:
 
+    * [ARCHETYPE-594](https://issues.apache.org/jira/browse/ARCHETYPE-594) - Update easymock
+    * [ARCHETYPE-596](https://issues.apache.org/jira/browse/ARCHETYPE-596) - Update xmlunit
 
-  <p>Enjoy,</p>
+Enjoy,
 
-  <p>-The Apache Maven team</p>
-</div>
+-The Apache Maven team

@@ -1,55 +1,42 @@
 ---
 layout: post
-title: Apache Maven Artifact Plugin Version 3.3.0 Released
+title: "Apache Maven Artifact Plugin Version 3.3.0 Released"
 date: '2022-04-07T09:30:30+00:00'
 permalink: apache-maven-artifact-plugin-version
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/plugins/maven-artifact-plugin/">Apache Maven Artifact Plugin, version 3.3.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Artifact Plugin, version 3.3.0](https://maven.apache.org/plugins/maven-artifact-plugin/).
 
-  <p>The Artifact Plugin is used to manage artifacts tasks.</p>
+The Artifact Plugin is used to manage artifacts tasks.
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-artifact-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.3.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-artifact-plugin</artifactId>
+  <version>3.3.0</version>
+</plugin>
+```
 
+<!-- more -->
 
+[Release Notes - Maven Artifact Plugin - Version 3.3.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12350902&styleName=Text&projectId=12324322)
 
+Release Notes - Maven Artifact Plugin - Version 3.3.0
 
-  <!-- more -->
+* Bug:
 
+    * [MARTIFACT-31](https://issues.apache.org/jira/browse/MARTIFACT-31) - wrong comparison results when buildinfo has been published to Central
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12350902&amp;styleName=Text&amp;projectId=12324322">Release Notes &ndash; Maven Artifact Plugin &ndash; Version 3.3.0</a></p>
+* New Feature:
 
-  <p>Release Notes &ndash; Maven Artifact Plugin &ndash; Version 3.3.0</p>
-
-  <ul>
-    <li><p>Bug:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MARTIFACT-31">MARTIFACT-31</a> &ndash; wrong comparison results when buildinfo has been published to Central</li>
-      </ul>
-    </li>
-    <li><p>New Feature:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MARTIFACT-24">MARTIFACT-24</a> &ndash; add artifact:check-buildplan goal to check that plugins versions do not have known reproducibility issues</li>
-      </ul>
-    </li>
-  </ul>
+    * [MARTIFACT-24](https://issues.apache.org/jira/browse/MARTIFACT-24) - add artifact:check-buildplan goal to check that plugins versions do not have known reproducibility issues
 
 
-  <p>Enjoy,</p>
+Enjoy,
 
-  <p>-The Apache Maven team</p>
-</div>
+-The Apache Maven team

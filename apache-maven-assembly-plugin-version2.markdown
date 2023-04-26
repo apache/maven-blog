@@ -1,38 +1,42 @@
 ---
 layout: post
-title: Apache Maven Assembly Plugin, version 3.4.2 released
+title: "Apache Maven Assembly Plugin Version 3.4.2 Released"
 date: '2022-07-23T12:22:22+00:00'
 permalink: apache-maven-assembly-plugin-version2
+categories:
+  - Maven-Plugin-Releases
 ---
-<div class="post_body"><p>The Apache Maven team is pleased to announce the release of the <a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Apache
-Maven Assembly Plugin, version 3.4.2</a>.</p>
-<p>The Assembly Plugin for Maven is primarily intended to allow users to aggregate
-the project output along with its dependencies, modules, site documentation,
-and other files into a single distributable archive.</p>
-<p>You can download the appropriate sources etc. from the <a href="https://maven.apache.org/plugins/maven-assembly-plugin/download.cgi">download page</a>.</p>
-<p>You should specify the version in your project's plugin configuration:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="nt">&lt;artifactId&gt;</span>maven-assembly-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">  <span class="nt">&lt;version&gt;</span>3.4.2<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="nt">&lt;/plugin&gt;</span>
-</span></span></code></pre></div><!-- more -->
-<p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317220&amp;version=12352095">Release Notes - Maven Assembly Plugin - Version 3.4.2</a></p>
-<ul>
-<li>
-<p>Bug:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-969">MASSEMBLY-969</a> - Excludes filtering in 3.4.0 and 3.4.1 differs from 3.3.0</li>
-</ul>
-</li>
-<li>
-<p>Task:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MASSEMBLY-949">MASSEMBLY-949</a> - Examples should refer to https instead of http</li>
-</ul>
-</li>
-</ul>
-<p>Enjoy,</p>
-<p>-The Apache Maven team</p>
+The Apache Maven team is pleased to announce the release of the [Apache
+Maven Assembly Plugin, version 3.4.2](https://maven.apache.org/plugins/maven-assembly-plugin/).
 
-    </div>
+The Assembly Plugin for Maven is primarily intended to allow users to aggregate
+the project output along with its dependencies, modules, site documentation,
+and other files into a single distributable archive.
+
+You can download the appropriate sources etc. from the [download page](https://maven.apache.org/plugins/maven-assembly-plugin/download.cgi).
+
+You should specify the version in your project's plugin configuration:
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-assembly-plugin</artifactId>
+  <version>3.4.2</version>
+</plugin>
+```
+
+<!-- more -->
+
+[Release Notes - Maven Assembly Plugin - Version 3.4.2](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317220&version=12352095)
+
+* Bug:
+
+    * [MASSEMBLY-969](https://issues.apache.org/jira/browse/MASSEMBLY-969) - Excludes filtering in 3.4.0 and 3.4.1 differs from 3.3.0
+
+* Task:
+
+    * [MASSEMBLY-949](https://issues.apache.org/jira/browse/MASSEMBLY-949) - Examples should refer to https instead of http
+
+Enjoy,
+
+-The Apache Maven team

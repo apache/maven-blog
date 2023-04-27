@@ -1,65 +1,49 @@
 ---
 layout: post
-title: Apache Maven Compiler Plugin Version 3.10.0 Released
+title: "Apache Maven Compiler Plugin Version 3.10.0 Released"
 date: '2022-02-14T12:57:57+00:00'
 permalink: apache-maven-compiler-plugin-version3
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Apache Maven Compiler Plugin, version 3.10.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Compiler Plugin, version 3.10.0](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-  <p>The Compiler Plugin is used to compile the sources of your project.</p>
+The Compiler Plugin is used to compile the sources of your project.
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.10.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.10.0</version>
+</plugin>
+```
 
+<!-- more -->
 
+[Release Notes - Maven Compiler Plugin - Version 3.10.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12351256)
 
 
-  <!-- more -->
+* Bugs:
 
+    * [MCOMPILER-205](https://issues.apache.org/jira/browse/MCOMPILER-205) - incremental compilation broken for package-info classes
+    * [MCOMPILER-225](https://issues.apache.org/jira/browse/MCOMPILER-225) - javac.bat and args file added to archive when fork and -X used
+    * [MCOMPILER-460](https://issues.apache.org/jira/browse/MCOMPILER-460) - Compiler doesn't show detailed information with the Maven Toolchains
+    * [MCOMPILER-470](https://issues.apache.org/jira/browse/MCOMPILER-470) - -parameters doesn't work with --release
+    * [MCOMPILER-474](https://issues.apache.org/jira/browse/MCOMPILER-474) - Dependent modules are not recompiled if we run the "package" goal
+    * [MCOMPILER-481](https://issues.apache.org/jira/browse/MCOMPILER-481) - JPMS Regression: cannot access <class> (requires static module not include anymore)
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&amp;version=12351256">Release Notes &ndash; Maven Compiler Plugin &ndash; Version 3.10.0</a></p>
+* Improvement:
 
-  <ul>
-    <li><p>Bugs:</p>
+    * [MCOMPILER-479](https://issues.apache.org/jira/browse/MCOMPILER-479) - Clarify `compilerArgs` Javadoc
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-205">MCOMPILER-205</a> &ndash; incremental compilation broken for package-info classes</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-225">MCOMPILER-225</a> &ndash; javac.bat and args file added to archive when fork and -X used</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-460">MCOMPILER-460</a> &ndash; Compiler doesn&rsquo;t show detailed information with the Maven Toolchains</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-470">MCOMPILER-470</a> &ndash; -parameters doesn&rsquo;t work with &mdash;release</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-474">MCOMPILER-474</a> &ndash; Dependent modules are not recompiled if we run the &ldquo;package&rdquo; goal</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-481">MCOMPILER-481</a> &ndash; JPMS Regression: cannot access <class> (requires static module not include anymore)</li>
-      </ul>
-    </li>
-    <li><p>Improvement:</p>
+* Task:
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-479">MCOMPILER-479</a> &ndash; Clarify <code>compilerArgs</code> Javadoc</li>
-      </ul>
-    </li>
-    <li><p>Task:</p>
+    * [MCOMPILER-484](https://issues.apache.org/jira/browse/MCOMPILER-484) - Remove deprecated mojos
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-484">MCOMPILER-484</a> &ndash; Remove deprecated mojos</li>
-      </ul>
-    </li>
-  </ul>
+Enjoy,
 
-
-  <p>Enjoy,</p>
-
-  <ul>
-    <li>The Apache Maven team</li>
-  </ul>
+- The Apache Maven team

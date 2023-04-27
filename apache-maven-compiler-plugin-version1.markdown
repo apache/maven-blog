@@ -1,66 +1,49 @@
 ---
 layout: post
-title: Apache Maven Compiler Plugin, version 3.8.1
+title: "Apache Maven Compiler Plugin Version 3.8.1 Released"
 date: '2019-05-02T20:57:08+00:00'
 permalink: apache-maven-compiler-plugin-version1
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-    <a href="http://maven.apache.org/plugins/maven-compiler-plugin/">Apache Maven Compiler Plugin, version 3.8.1</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Compiler Plugin, version 3.8.1](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-    <p>The Compiler Plugin is used to compile the sources of your project.</p>
+The Compiler Plugin is used to compile the sources of your project.
 
-    <p>Important Notes since Version 3.8.1</p>
+Important Notes since Version 3.8.1
 
-    <ul>
-        <li>The default value for source/target has been lifted
-            from 1.5 to 1.6 see <a href="https://issues.apache.org/jira/browse/MCOMPILER-335">MCOMPILER-335</a>.</li>
-    </ul>
+* The default value for source/target has been lifted
+  from 1.5 to 1.6 see [MCOMPILER-335](https://issues.apache.org/jira/browse/MCOMPILER-335).
 
 
-    <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-    <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.8.1<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.8.1</version>
+</plugin>
+```
 
+<!-- more -->
 
+[Release Notes - Maven Compiler Plugin - Version 3.8.1](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12343484)
 
+Bugs:
 
-    <!-- more -->
+* [MCOMPILER-306](https://issues.apache.org/jira/browse/MCOMPILER-306) - Incorrect `compilerArgs` example usage
+* [MCOMPILER-349](https://issues.apache.org/jira/browse/MCOMPILER-349) - maven-compiler-plugin does not recompile a module if a dependency module has been updated & recompiled
+* [MCOMPILER-360](https://issues.apache.org/jira/browse/MCOMPILER-360) - NPE when calculating modulepath with invalid entries
+* [MCOMPILER-379](https://issues.apache.org/jira/browse/MCOMPILER-379) - Fatal error compiling: basedir ... arget/generated-sources/annotations does not exist
 
+Improvements:
 
-    <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&amp;version=12343484">Release Notes &ndash; Maven Compiler Plugin &ndash; Version 3.8.1</a></p>
+* [MCOMPILER-322](https://issues.apache.org/jira/browse/MCOMPILER-322) - Set the JPMS module version
+* [MCOMPILER-366](https://issues.apache.org/jira/browse/MCOMPILER-366) - Warning about automodules should provide the list of offending libraries
 
-    <p>Bugs:</p>
+Enjoy,
 
-    <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-306">MCOMPILER-306</a> &ndash; Incorrect <code>compilerArgs</code> example usage</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-349">MCOMPILER-349</a> &ndash; maven-compiler-plugin does not recompile a module if a dependency module has been updated &amp; recompiled</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-360">MCOMPILER-360</a> &ndash; NPE when calculating modulepath with invalid entries</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-379">MCOMPILER-379</a> &ndash; Fatal error compiling: basedir &hellip; arget/generated-sources/annotations does not exist</li>
-    </ul>
-
-
-    <p>Improvements:</p>
-
-    <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-322">MCOMPILER-322</a> &ndash; Set the JPMS module version</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-366">MCOMPILER-366</a> &ndash; Warning about automodules should provide the list of offending libraries</li>
-    </ul>
-
-
-    <p>Enjoy,</p>
-
-    <ul>
-        <li>The Apache Maven team</li>
-    </ul>
-
-</div>
+- The Apache Maven team

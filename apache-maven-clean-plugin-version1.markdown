@@ -1,82 +1,61 @@
 ---
 layout: post
-title: Apache Maven Clean Plugin Version 3.2.0 Released
+title: "Apache Maven Clean Plugin Version 3.2.0 Released"
 date: '2022-04-05T17:26:31+00:00'
 permalink: apache-maven-clean-plugin-version1
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/plugins/maven-clean-plugin/">Apache Maven Clean Plugin, version 3.2.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Clean Plugin, version 3.2.0](https://maven.apache.org/plugins/maven-clean-plugin/).
 
-  <p>The Clean Plugin is used when you want to remove files generated at build-time
-    in a project&rsquo;s directory.</p>
+The Clean Plugin is used when you want to remove files generated at build-time
+in a project's directory.
 
-  <p>Important Note:</p>
+Important Note:
 
-  <ul>
-    <li>Maven 3.2.5+ only</li>
-    <li>JDK 8 minimum requirement</li>
-  </ul>
+* Maven 3.2.5+ only
+* JDK 8 minimum requirement
 
+You should specify the version in your project's plugin configuration:
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-clean-plugin</artifactId>
+  <version>3.2.0</version>
+</plugin>
+```
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-clean-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.2.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+<!-- more -->
 
+[Release Notes - Maven Clean Plugin - Version 3.2.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12343770&styleName=Text&projectId=12317224)
 
+Release Notes - Maven Clean Plugin - Version 3.2.0
 
+* New Feature
 
-  <!-- more -->
+    * [MCLEAN-95] - Provide a fast deletion option
 
+* Improvements:
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12343770&amp;styleName=Text&amp;projectId=12317224">Release Notes &ndash; Maven Clean Plugin &ndash; Version 3.2.0</a></p>
+    * [MCLEAN-89] - Add GitHub Information
+    * [MCLEAN-90] - Custom search broken on pages rendered using Fluido Skin 1.7
+    * [MCLEAN-91] - Upgrade maven-plugins to 34
+    * [MCLEAN-98] - Upgrade maven-plugin parent to 35
 
-  <p>Release Notes &ndash; Maven Clean Plugin &ndash; Version 3.2.0</p>
+* Tasks:
 
-  <ul>
-    <li><p>New Feature</p>
+    * [MCLEAN-94] - Update plugin dependencies
+    * [MCLEAN-97] - Require Java 8
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-95">MCLEAN-95</a> &ndash; Provide a fast deletion option</li>
-      </ul>
-    </li>
-    <li><p>Improvements:</p>
+* Dependency upgrades:
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-89">MCLEAN-89</a> &ndash; Add GitHub Information</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-90">MCLEAN-90</a> &ndash; Custom search broken on pages rendered using Fluido Skin 1.7</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-91">MCLEAN-91</a> &ndash; Upgrade maven-plugins to 34</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-98">MCLEAN-98</a> &ndash; Upgrade maven-plugin parent to 35</li>
-      </ul>
-    </li>
-    <li><p>Tasks:</p>
+    * [MCLEAN-87] - Upgrade maven-plugins parent to version 32
+    * [MCLEAN-92] - Require Maven 3.1.1 (drop dependency to Maven 3.0)
+    * [MCLEAN-96] - Require Maven 3.2.5+
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-94">MCLEAN-94</a> &ndash; Update plugin dependencies</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-97">MCLEAN-97</a> &ndash; Require Java 8</li>
-      </ul>
-    </li>
-    <li><p>Dependency upgrades:</p>
+Enjoy,
 
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-87">MCLEAN-87</a> &ndash; Upgrade maven-plugins parent to version 32</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-92">MCLEAN-92</a> &ndash; Require Maven 3.1.1 (drop dependency to Maven 3.0)</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCLEAN-96">MCLEAN-96</a> &ndash; Require Maven 3.2.5+</li>
-      </ul>
-    </li>
-  </ul>
-
-
-  <p>Enjoy,</p>
-
-  <p>-The Apache Maven team</p>
-</div>
+-The Apache Maven team

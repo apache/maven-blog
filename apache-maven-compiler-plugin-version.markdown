@@ -1,86 +1,67 @@
 ---
 layout: post
-title: Apache Maven Compiler Plugin Version 3.8.0 Released
+title: "Apache Maven Compiler Plugin Version 3.8.0 Released"
 date: '2018-07-29T20:50:16+00:00'
 permalink: apache-maven-compiler-plugin-version
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-<a href="http://maven.apache.org/plugins/maven-compiler-plugin/">Apache Maven Compiler Plugin, version 3.8.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Compiler Plugin, version 3.8.0](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-<p>The Compiler Plugin is used to compile the sources of your project.</p>
+The Compiler Plugin is used to compile the sources of your project.
 
-<p>Important Notes since Version 3.8.0</p>
+Important Notes since Version 3.8.0
 
-<ul>
-<li>The default value for source/target has been lifted
-from 1.5 to 1.6 see <a href="https://issues.apache.org/jira/browse/MCOMPILER-335">MCOMPILER-335</a>.</li>
-</ul>
+* The default value for source/target has been lifted
+  from 1.5 to 1.6 see [MCOMPILER-335](https://issues.apache.org/jira/browse/MCOMPILER-335).
 
 
-<p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.8.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.8.0</version>
+</plugin>
+```
 
 <!-- more -->
 
-
-<p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&amp;version=12341563">Release Notes &ndash; Maven Compiler Plugin &ndash; Version 3.8.0</a></p>
-
-<p>Bugs:</p>
-
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-311">MCOMPILER-311</a> &ndash; NPE when &mdash;patch-module is used</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-321">MCOMPILER-321</a> &ndash; Problematic Java 9 modules are silently ignored</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-332">MCOMPILER-332</a> &ndash; Java 10 not supported</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-338">MCOMPILER-338</a> &ndash; Build Issue based on MCOMPILER-192 IT</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-342">MCOMPILER-342</a> &ndash; Unsupported class file major version 55</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-343">MCOMPILER-343</a> &ndash; Tests fail to compile in modularized project due to wrong module descriptor path being passed to plexus-java</li>
-</ul>
+[Release Notes - Maven Compiler Plugin - Version 3.8.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12341563)
 
 
-<p>Improvements:</p>
+Bugs:
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-313">MCOMPILER-313</a> &ndash; Support mrjar dependency with module descriptor only in META-INF/versions/x</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-323">MCOMPILER-323</a> &ndash; Support multi-release jars</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-335">MCOMPILER-335</a> &ndash; Update default source/target from 1.5 to 1.6</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-341">MCOMPILER-341</a> &ndash; Compile module-info.java files located in test sources</li>
-</ul>
+* [MCOMPILER-311](https://issues.apache.org/jira/browse/MCOMPILER-311) - NPE when --patch-module is used
+* [MCOMPILER-321](https://issues.apache.org/jira/browse/MCOMPILER-321) - Problematic Java 9 modules are silently ignored
+* [MCOMPILER-332](https://issues.apache.org/jira/browse/MCOMPILER-332) - Java 10 not supported
+* [MCOMPILER-338](https://issues.apache.org/jira/browse/MCOMPILER-338) - Build Issue based on MCOMPILER-192 IT
+* [MCOMPILER-342](https://issues.apache.org/jira/browse/MCOMPILER-342) - Unsupported class file major version 55
+* [MCOMPILER-343](https://issues.apache.org/jira/browse/MCOMPILER-343) - Tests fail to compile in modularized project due to wrong module descriptor path being passed to plexus-java
 
+Improvements:
 
-<p>Tasks:</p>
+* [MCOMPILER-313](https://issues.apache.org/jira/browse/MCOMPILER-313) - Support mrjar dependency with module descriptor only in META-INF/versions/x
+* [MCOMPILER-323](https://issues.apache.org/jira/browse/MCOMPILER-323) - Support multi-release jars
+* [MCOMPILER-335](https://issues.apache.org/jira/browse/MCOMPILER-335) - Update default source/target from 1.5 to 1.6
+* [MCOMPILER-341](https://issues.apache.org/jira/browse/MCOMPILER-341) - Compile module-info.java files located in test sources
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-336">MCOMPILER-336</a> &ndash; Dependency that should be on modulepath sometime put on classpath</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-344">MCOMPILER-344</a> &ndash; Deprecate <optimize> flag</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-350">MCOMPILER-350</a> &ndash; Add GitHub Documentation</li>
-</ul>
+Tasks:
 
+* [MCOMPILER-336](https://issues.apache.org/jira/browse/MCOMPILER-336) - Dependency that should be on modulepath sometime put on classpath
+* [MCOMPILER-344](https://issues.apache.org/jira/browse/MCOMPILER-344) - Deprecate <optimize> flag
+* [MCOMPILER-350](https://issues.apache.org/jira/browse/MCOMPILER-350) - Add GitHub Documentation
 
-<p>Dependency upgrades:</p>
+Dependency upgrades:
 
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-324">MCOMPILER-324</a> &ndash; Upgrade parent to 31</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-351">MCOMPILER-351</a> &ndash; Upgrade maven-plugins parent to version 32</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-352">MCOMPILER-352</a> &ndash; Upgrade maven-shared-utils to 3.2.1</li>
-<li><a href="https://issues.apache.org/jira/browse/MCOMPILER-353">MCOMPILER-353</a> &ndash; Upgrade plexus-compiler to 2.8.4</li>
-</ul>
+* [MCOMPILER-324](https://issues.apache.org/jira/browse/MCOMPILER-324) - Upgrade parent to 31
+* [MCOMPILER-351](https://issues.apache.org/jira/browse/MCOMPILER-351) - Upgrade maven-plugins parent to version 32
+* [MCOMPILER-352](https://issues.apache.org/jira/browse/MCOMPILER-352) - Upgrade maven-shared-utils to 3.2.1
+* [MCOMPILER-353](https://issues.apache.org/jira/browse/MCOMPILER-353) - Upgrade plexus-compiler to 2.8.4
 
+Enjoy,
 
-<p>Enjoy,</p>
-
-<p>-The Apache Maven team</p>
-</div>
+-The Apache Maven team

@@ -1,55 +1,38 @@
 ---
 layout: post
-title: Apache Maven Compiler Plugin Version 3.10.1 Released
+title: "Apache Maven Compiler Plugin Version 3.10.1 Released"
 date: '2022-03-11T12:21:30+00:00'
 permalink: apache-maven-compiler-plugin-version2
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Apache Maven Compiler Plugin, version 3.10.1</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Compiler Plugin, version 3.10.1](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-  <p>The Compiler Plugin is used to compile the sources of your project.</p>
+The Compiler Plugin is used to compile the sources of your project.
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.10.1<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.10.1</version>
+</plugin>
+```
 
+<!-- more -->
 
+[Release Notes - Maven Compiler Plugin - Version 3.10.1](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12343484)
 
+* Bugs:
+    * [MCOMPILER-346](https://issues.apache.org/jira/browse/MCOMPILER-346) - workaround to jdk bug: assertionError inside javac when using javax.tools API
+    * [MCOMPILER-485](https://issues.apache.org/jira/browse/MCOMPILER-485) - Incorrect internal string format in generated package-info.class files on Windows
 
-  <!-- more -->
+* New Feature:
+    * [MCOMPILER-426](https://issues.apache.org/jira/browse/MCOMPILER-426) - dedicated option for enabling preview feature
 
+Enjoy,
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&amp;version=12343484">Release Notes &ndash; Maven Compiler Plugin &ndash; Version 3.10.1</a></p>
-
-  <ul>
-    <li><p>Bugs:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-346">MCOMPILER-346</a> &ndash; workaround to jdk bug: assertionError inside javac when using javax.tools API</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-485">MCOMPILER-485</a> &ndash; Incorrect internal string format in generated package-info.class files on Windows</li>
-      </ul>
-    </li>
-    <li><p>New Feature:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-426">MCOMPILER-426</a> &ndash; dedicated option for enabling preview feature</li>
-      </ul>
-    </li>
-  </ul>
-
-
-  <p>Enjoy,</p>
-
-  <ul>
-    <li>The Apache Maven team</li>
-  </ul>
+- The Apache Maven team

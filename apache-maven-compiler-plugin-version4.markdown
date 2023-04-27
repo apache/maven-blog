@@ -1,86 +1,67 @@
 ---
 layout: post
-title: Apache Maven Compiler Plugin Version 3.9.0 Released
+title: "Apache Maven Compiler Plugin Version 3.9.0 Released"
 date: '2022-01-12T14:39:39+00:00'
 permalink: apache-maven-compiler-plugin-version4
+categories:
+  - Maven
+  - Maven-Plugin-Releases
 ---
-<div class="entry-content"><p>The Apache Maven team is pleased to announce the release of the
-  <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Apache Maven Compiler Plugin, version 3.9.0</a>.</p>
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Compiler Plugin, version 3.9.0](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-  <p>The Compiler Plugin is used to compile the sources of your project.</p>
+The Compiler Plugin is used to compile the sources of your project.
 
-  <p>You should specify the version in your project&rsquo;s plugin configuration:</p>
+You should specify the version in your project's plugin configuration:
 
-  <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;plugin&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;version&gt;</span>3.9.0<span class="nt">&lt;/version&gt;</span>
-</span><span class='line'><span class="nt">&lt;/plugin&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.9.0</version>
+</plugin>
+```
 
+<!-- more -->
 
+[Release Notes - Maven Compiler Plugin - Version 3.9.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12345214)
 
 
-  <!-- more -->
+* Bugs:
+
+    * [MCOMPILER-272](https://issues.apache.org/jira/browse/MCOMPILER-272) - When annotationProcessorPaths has multiple entries, only the transitive dependencies of the first entry are added
+    * [MCOMPILER-359](https://issues.apache.org/jira/browse/MCOMPILER-359) - plexus-java 0.9.10 causes a NullPointer in compiler-plugin 3.8.0
+    * [MCOMPILER-373](https://issues.apache.org/jira/browse/MCOMPILER-373) - Unable to compile MR jar code against older directories
+    * [MCOMPILER-410](https://issues.apache.org/jira/browse/MCOMPILER-410) - CI Broken by JDK 15 changes
+    * [MCOMPILER-455](https://issues.apache.org/jira/browse/MCOMPILER-455) - preparePaths does not take toolchain into account when parsing module-info.class
+
+* Improvements:
+
+    * [MCOMPILER-376](https://issues.apache.org/jira/browse/MCOMPILER-376) - Change default source/target to 1.7 (new minimum for JDK 12)
+    * [MCOMPILER-382](https://issues.apache.org/jira/browse/MCOMPILER-382) - Remove superfluous exception declarations
+    * [MCOMPILER-383](https://issues.apache.org/jira/browse/MCOMPILER-383) - Use Java 7 type inference more
+    * [MCOMPILER-384](https://issues.apache.org/jira/browse/MCOMPILER-384) - Remove null checks in conjunction with instanceof
+    * [MCOMPILER-385](https://issues.apache.org/jira/browse/MCOMPILER-385) - Minor performance improvements in CompilerMojo
+    * [MCOMPILER-404](https://issues.apache.org/jira/browse/MCOMPILER-404) - Update default source/target from 1.6 to 1.7
+    * [MCOMPILER-405](https://issues.apache.org/jira/browse/MCOMPILER-405) - Update plexus-java to 1.1.0
+    * [MCOMPILER-411](https://issues.apache.org/jira/browse/MCOMPILER-411) - make build Reproducible
+    * [MCOMPILER-427](https://issues.apache.org/jira/browse/MCOMPILER-427) - Lack of guide for cross-compilation for JDK 9+
+    * [MCOMPILER-428](https://issues.apache.org/jira/browse/MCOMPILER-428) - Documentation regarding useIncrementalCompilation not very useful
+    * [MCOMPILER-449](https://issues.apache.org/jira/browse/MCOMPILER-449) - Improve <jdkToolchain> parameter description
+    * [MCOMPILER-471](https://issues.apache.org/jira/browse/MCOMPILER-471) - Require Java 8
+    * [MCOMPILER-475](https://issues.apache.org/jira/browse/MCOMPILER-475) - Shared GitHub Actions
+
+* Tasks:
+
+    * [MCOMPILER-189](https://issues.apache.org/jira/browse/MCOMPILER-189) - Source Xref report is missing classes due to simple name collision, update maven-jxr-plugin
+    * [MCOMPILER-398](https://issues.apache.org/jira/browse/MCOMPILER-398) - Simplify the implementation of the inclusion/exclusion logic
+    * [MCOMPILER-467](https://issues.apache.org/jira/browse/MCOMPILER-467) - Improve compile mojo parameter multiReleaseOutput docs
+
+* Dependency upgrade:
+
+    * [MCOMPILER-399](https://issues.apache.org/jira/browse/MCOMPILER-399) - Upgrade mockito to latest 2.x
 
 
-  <p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&amp;version=12345214">Release Notes &ndash; Maven Compiler Plugin &ndash; Version 3.9.0</a></p>
+Enjoy,
 
-  <ul>
-    <li><p>Bugs:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-272">MCOMPILER-272</a> &ndash; When annotationProcessorPaths has multiple entries, only the transitive dependencies of the first entry are added</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-359">MCOMPILER-359</a> &ndash; plexus-java 0.9.10 causes a NullPointer in compiler-plugin 3.8.0</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-373">MCOMPILER-373</a> &ndash; Unable to compile MR jar code against older directories</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-410">MCOMPILER-410</a> &ndash; CI Broken by JDK 15 changes</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-455">MCOMPILER-455</a> &ndash; preparePaths does not take toolchain into account when parsing module-info.class</li>
-      </ul>
-    </li>
-    <li><p>Improvements:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-376">MCOMPILER-376</a> &ndash; Change default source/target to 1.7 (new minimum for JDK 12)</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-382">MCOMPILER-382</a> &ndash; Remove superfluous exception declarations</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-383">MCOMPILER-383</a> &ndash; Use Java 7 type inference more</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-384">MCOMPILER-384</a> &ndash; Remove null checks in conjunction with instanceof</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-385">MCOMPILER-385</a> &ndash; Minor performance improvements in CompilerMojo</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-404">MCOMPILER-404</a> &ndash; Update default source/target from 1.6 to 1.7</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-405">MCOMPILER-405</a> &ndash; Update plexus-java to 1.1.0</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-411">MCOMPILER-411</a> &ndash; make build Reproducible</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-427">MCOMPILER-427</a> &ndash; Lack of guide for cross-compilation for JDK 9+</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-428">MCOMPILER-428</a> &ndash; Documentation regarding useIncrementalCompilation not very useful</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-449">MCOMPILER-449</a> &ndash; Improve <jdkToolchain> parameter description</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-471">MCOMPILER-471</a> &ndash; Require Java 8</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-475">MCOMPILER-475</a> &ndash; Shared GitHub Actions</li>
-      </ul>
-    </li>
-    <li><p>Tasks:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-189">MCOMPILER-189</a> &ndash; Source Xref report is missing classes due to simple name collision, update maven-jxr-plugin</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-398">MCOMPILER-398</a> &ndash; Simplify the implementation of the inclusion/exclusion logic</li>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-467">MCOMPILER-467</a> &ndash; Improve compile mojo parameter multiReleaseOutput docs</li>
-      </ul>
-    </li>
-    <li><p>Dependency upgrade:</p>
-
-      <ul>
-        <li><a href="https://issues.apache.org/jira/browse/MCOMPILER-399">MCOMPILER-399</a> &ndash; Upgrade mockito to latest 2.x</li>
-      </ul>
-    </li>
-  </ul>
-
-
-  <p>Enjoy,</p>
-
-  <ul>
-    <li>The Apache Maven team</li>
-  </ul>
-
-</div>
+- The Apache Maven team

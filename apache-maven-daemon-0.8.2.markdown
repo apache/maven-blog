@@ -2,7 +2,7 @@
 layout: post
 title: "Apache Maven Daemon - Version 0.8.2 Released"
 date: '2022-10-10T17:18:18+00:00'
-permalink: apache-maven-daemon-version-0
+permalink: apache-maven-daemon-0-8-2
 categories:
   - Maven
   - Maven-Daemon

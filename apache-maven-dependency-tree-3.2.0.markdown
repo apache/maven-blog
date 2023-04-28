@@ -2,7 +2,7 @@
 layout: post
 title: "Apache Shared Component: Maven Dependency Tree Version 3.2.0 Released"
 date: '2022-08-25T17:15:15+00:00'
-permalink: apache-maven-dependency-tree-version
+permalink: apache-maven-dependency-tree-3-2-0
 categories:
 - Maven
 - Maven-Shared

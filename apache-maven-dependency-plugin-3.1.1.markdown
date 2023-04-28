@@ -2,7 +2,7 @@
 layout: post
 title: "Apache Maven Dependency Plugin Version 3.1.1 Released"
 date: '2018-05-24T13:43:56+00:00'
-permalink: apache-maven-dependency-plugin-version1
+permalink: apache-maven-dependency-plugin-3-1-1
 categories:
 - Maven
 - Maven-Plugin-Releases

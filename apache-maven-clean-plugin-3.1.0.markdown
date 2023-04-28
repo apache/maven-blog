@@ -2,7 +2,7 @@
 layout: post
 title: "Apache Maven Clean Plugin Version 3.1.0 Released"
 date: '2018-04-14T13:43:18+00:00'
-permalink: apache-maven-clean-plugin-version
+permalink: apache-maven-clean-plugin-3-1-0
 categories:
   - Maven
   - Maven-Plugin-Releases

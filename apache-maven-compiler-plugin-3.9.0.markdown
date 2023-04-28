@@ -2,7 +2,7 @@
 layout: post
 title: "Apache Maven Compiler Plugin Version 3.9.0 Released"
 date: '2022-01-12T14:39:39+00:00'
-permalink: apache-maven-compiler-plugin-version4
+permalink: apache-maven-compiler-plugin-3-9-0
 categories:
   - Maven
   - Maven-Plugin-Releases

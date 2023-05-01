@@ -4,8 +4,8 @@ title: "Apache Maven Dependency Plugin Version 3.1.0 Released"
 date: '2018-04-06T16:36:22+00:00'
 permalink: apache-maven-dependency-plugin-3-1-0
 categories:
-- Maven
-- Maven-Plugin-Releases
+  - Maven-Dependency-Plugin
+  - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the
 [Apache Maven Dependency Plugin, version 3.1.0](https://maven.apache.org/plugins/maven-dependency-plugin/).

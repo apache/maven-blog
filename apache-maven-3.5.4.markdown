@@ -2,10 +2,9 @@
 layout: post
 title: "Apache Maven 3.5.4 Released"
 date: '2018-06-22T18:57:38+00:00'
-permalink: apache-maven-release-3-5-4
+permalink: apache-maven-3-5-4
 categories:
-- Maven
-- Maven-Releases
+  - Maven-Core-Releases
 ---
 The Apache Maven team is pleased to announce the release of the Apache
 Maven 3.5.4.

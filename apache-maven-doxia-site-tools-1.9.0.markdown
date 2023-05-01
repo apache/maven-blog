@@ -4,8 +4,8 @@ title: Apache Maven Doxia Site Tools Version 1.9.0 Released
 date: '2019-06-03T12:21:32+00:00'
 permalink: apache-maven-doxia-site-tools-1-9-0
 categories:
-- Maven
-- Maven-Components
+  - Maven-Doxia-Site-Tools
+  - Maven-Components
 ---
 The Apache Maven team is pleased to announce the release of the
 [Doxia Site Tools](https://maven.apache.org/doxia/doxia-sitetools/) Version 1.9.0,

@@ -4,7 +4,7 @@ title: "Apache Maven Assembly Plugin Version 3.1.1 Released"
 date: '2019-01-02T23:50:25+00:00'
 permalink: apache-maven-assembly-plugin-3-1-1
 categories:
-  - Maven
+  - Maven-Assembly-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the [Apache
@@ -17,7 +17,7 @@ and other files into a single distributable archive.
 Note:
 
 * Maven 3.X only
-* JDK 7 miminum requirement.
+* JDK 7 minimum requirement.
 
 You can download the appropriate sources etc. from the [download page](https://maven.apache.org/plugins/maven-assembly-plugin/download.cgi).
 

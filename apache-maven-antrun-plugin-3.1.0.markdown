@@ -4,7 +4,7 @@ title: "Apache Maven AntRun Plugin Version 3.1.0 Released"
 date: '2022-04-22T00:11:11+00:00'
 permalink: apache-maven-antrun-plugin-3-1-0
 categories:
-  - Maven
+  - Maven-AntRun-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the [Apache

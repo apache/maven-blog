@@ -4,8 +4,8 @@ title: "Apache Shared Component: Maven Dependency Tree Version 3.2.0 Released"
 date: '2022-08-25T17:15:15+00:00'
 permalink: apache-maven-dependency-tree-3-2-0
 categories:
-- Maven
-- Maven-Shared
+  - Maven-Dependency-Tree
+  - Maven-Shared
 ---
 The Apache Maven team is pleased to announce the release of the
 [Apache Shared Component: Apache Maven Dependency Tree Version 3.2.0](https://maven.apache.org/shared/maven-dependency-tree/)

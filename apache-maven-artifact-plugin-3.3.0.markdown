@@ -4,7 +4,7 @@ title: "Apache Maven Artifact Plugin Version 3.3.0 Released"
 date: '2022-04-07T09:30:30+00:00'
 permalink: apache-maven-artifact-plugin-3-3-0
 categories:
-  - Maven
+  - Maven-Artifact-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the

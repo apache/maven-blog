@@ -4,8 +4,8 @@ title: "Apache Doxia Site Tools Version 2.0.0-M2 Released"
 date: '2022-02-20T23:11:09+00:00'
 permalink: apache-maven-doxia-sitetools-2-0-0-M2
 categories:
-- Maven
-- Maven-Components
+  - Maven-Doxia-Site-Tools
+  - Maven-Components
 ---
 The Apache Maven team is pleased to announce the release of the
 [Doxia Site Tools](https://maven.apache.org/doxia/doxia-sitetools/) Version 2.0.0-M2,

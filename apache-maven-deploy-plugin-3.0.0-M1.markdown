@@ -4,8 +4,8 @@ title: "Apache Maven Deploy Plugin Version 3.0.0-M1 Released"
 date: '2018-10-01T19:30:55+00:00'
 permalink: apache-maven-deploy-plugin-3-0-0-M1
 categories:
-- Maven
-- Maven-Plugin-Releases
+  - Maven-Deploy-Plugin
+  - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the
 [Apache Maven Deploy Plugin, version 3.0.0-M1](https://maven.apache.org/plugins/maven-deploy-plugin/).

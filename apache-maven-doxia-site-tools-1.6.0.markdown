@@ -4,7 +4,7 @@ title: "Apache Doxia base and Doxia Site Tools Version 1.6 Released"
 date: '2014-07-01T22:49:49+00:00'
 permalink: apache-maven-doxia-site-tools-1-6-0
 categories:
-  - Maven
+  - Maven-Doxia-Site-Tools
   - Maven-Components
 ---
 The Apache Maven team is pleased to announce the release of the

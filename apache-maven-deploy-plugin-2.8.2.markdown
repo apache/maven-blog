@@ -4,7 +4,7 @@ title: "Apache Maven Deploy Plugin Version 2.8.2 Released"
 date: '2014-08-31T16:38:00+00:00'
 permalink: apache-maven-deploy-plugin-2-8-2
 categories:
-  - Maven
+  - Maven-Deploy-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the

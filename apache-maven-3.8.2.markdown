@@ -4,8 +4,7 @@ title: "Apache Maven 3.8.2 Released"
 date: '2021-08-15T13:34:44+00:00'
 permalink: apache-maven-3-8-2
 categories:
-  - Maven
-  - Maven-Releases
+  - Maven-Core-Releases
 ---
 The Apache Maven team is pleased to announce the release of the [Apache Maven 3.8.2](https://maven.apache.org/ref/3.8.2/)
 

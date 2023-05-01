@@ -4,7 +4,7 @@ title: "Apache Maven Compiler Plugin Version 3.10.0 Released"
 date: '2022-02-14T12:57:57+00:00'
 permalink: apache-maven-compiler-plugin-3-10-0
 categories:
-  - Maven
+  - Maven-Compiler-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the

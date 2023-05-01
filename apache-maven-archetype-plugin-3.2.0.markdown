@@ -4,7 +4,7 @@ title: "Apache Maven Archetype Plugin 3.2.0 Released"
 date: '2020-07-22T22:35:55+00:00'
 permalink: apache-maven-archetype-plugin-3-2-0
 categories:
-  - Maven
+  - Maven-Archetype-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the

@@ -2,10 +2,9 @@
 layout: post
 title: "Apache Maven 3.5.3 Released"
 date: '2018-03-08T16:30:40+00:00'
-permalink: apache-maven-version-3-5-3
+permalink: apache-maven-3-5-3
 categories:
-- Maven
-- Maven-Releases
+  - Maven-Core-Releases
 ---
 The Apache Maven team is pleased to announce the release of the Apache
 Maven 3.5.3

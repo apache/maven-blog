@@ -4,7 +4,7 @@ title: "Apache Maven Deploy Plugin - Release 2.8"
 date: '2018-10-01T19:30:55+00:00'
 permalink: apache-maven-deploy-plugin-2-8-0
 categories:
-  - Maven
+  - Maven-Deploy-Plugin
   - Maven-Plugin-Releases
 ---
 The new release of the [Apache Maven Deploy Plugin 2.8](https://maven.apache.org/plugins/maven-deploy-plugin/) is available.

@@ -4,7 +4,7 @@ title: "Apache Maven Assembly Plugin Version 3.3.0 Released"
 date: '2020-05-01T13:00:00+00:00'
 permalink: apache-maven-assembly-plugin-3-3-0
 categories:
-  - Maven
+  - Maven-Assembly-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the [Apache

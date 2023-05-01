@@ -4,8 +4,7 @@ title: "Apache Maven 3.6.0 Released"
 date: '2018-11-01T15:15:12+00:00'
 permalink: apache-maven-3-6-0
 categories:
-  - Maven
-  - Maven-Releases
+  - Maven-Core-Releases
 ---
 The Apache Maven team is pleased to announce the release of the Apache
 Maven 3.6.0.

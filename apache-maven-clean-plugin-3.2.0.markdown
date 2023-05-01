@@ -4,7 +4,7 @@ title: "Apache Maven Clean Plugin Version 3.2.0 Released"
 date: '2022-04-05T17:26:31+00:00'
 permalink: apache-maven-clean-plugin-3-2-0
 categories:
-  - Maven
+  - Maven-Compiler-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the

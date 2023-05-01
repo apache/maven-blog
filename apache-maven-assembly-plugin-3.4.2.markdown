@@ -4,6 +4,7 @@ title: "Apache Maven Assembly Plugin Version 3.4.2 Released"
 date: '2022-07-23T12:22:22+00:00'
 permalink: apache-maven-assembly-plugin-3-4-2
 categories:
+  - Maven-Assembly-Plugin
   - Maven-Plugin-Releases
 ---
 The Apache Maven team is pleased to announce the release of the [Apache

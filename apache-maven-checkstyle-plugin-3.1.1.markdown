@@ -4,7 +4,7 @@ title: "Apache Maven Checkstyle Plugin Version 3.1.1 Released"
 date: '2020-02-23T10:32:21+00:00'
 permalink: apache-maven-checkstyle-plugin-3-1-1
 categories:
-  - Maven
+  - Maven-Checkstyle-Plugin
   - Maven-Plugin-Releases
 ---
 The Maven team is pleased to announce the release of the

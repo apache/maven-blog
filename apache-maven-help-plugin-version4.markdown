@@ -1,63 +1,65 @@
 ---
 layout: post
-title: Apache Maven Help Plugin, version 3.3.0 released
+title: "Apache Maven Help Plugin Version 3.3.0 Released"
 date: '2022-08-16T20:02:02+00:00'
-permalink: apache-maven-help-plugin-version4
+permalink: apache-maven-help-plugin-3-3-0
+categories:
+  - Maven-Help-Plugin
+  - Maven-Plugin-Releases
 ---
-<div class="post_body"><p>The Apache Maven team is pleased to announce the release of the
-<a href="https://maven.apache.org/plugins/maven-help-plugin/">Apache Maven Help Plugin, version 3.3.0</a></p>
-<p>The Maven Help Plugin is used to get relative information about a project or
+The Apache Maven team is pleased to announce the release of the
+[Apache Maven Help Plugin, version 3.3.0](https://maven.apache.org/plugins/maven-help-plugin/)
+
+The Maven Help Plugin is used to get relative information about a project or
 the system. It can be used to get a description of a particular plugin,
 including the plugin's goals with their parameters and component requirements,
 the effective POM and effective settings of the current build, and the profiles
-applied to the current project being built.</p>
-<p>Important Notes since Version 3.3.0</p>
-<ul>
-<li>JDK 8 minimum requirement</li>
-<li>Minimum Maven version 3.2.5</li>
-</ul>
-<p>You should specify the version in your project's plugin configuration:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="nt">&lt;artifactId&gt;</span>maven-help-plugin<span class="nt">&lt;/artifactId&gt;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">  <span class="nt">&lt;version&gt;</span>3.3.0<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="nt">&lt;/plugin&gt;</span>
-</span></span></code></pre></div><p>You can download the appropriate <a href="https://maven.apache.org/plugins/maven-help-plugin/download.cgi">sources etc. from the download page</a>.</p>
-<p><a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317522&amp;version=12345417">Release Notes - Maven Help Plugin - Version 3.3.0</a></p>
-<ul>
-<li>
-<p>Bugs:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MPH-164">MPH-164</a> - Effective-pom ignores artifact argument</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-171">MPH-171</a> - Plugin repositories are not preserved from project pom</li>
-</ul>
-</li>
-<li>
-<p>Improvements:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MPH-162">MPH-162</a> - Allow all mojos to be configured to produce repeatable output</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-167">MPH-167</a> - make build Reproducible</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-170">MPH-170</a> - Require Maven 3.1.1 (drop dependency to Maven 3.0)</li>
-</ul>
-</li>
-<li>
-<p>Tasks:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MPH-187">MPH-187</a> - Upgrade to JDK minimum</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-188">MPH-188</a> - Cleanup - Pom</li>
-</ul>
-</li>
-<li>
-<p>Dependency upgrades:</p>
-<ul>
-<li><a href="https://issues.apache.org/jira/browse/MPH-174">MPH-174</a> - Upgrade XStream to 1.4.17</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-179">MPH-179</a> - Upgrade XStream to 1.4.18</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-186">MPH-186</a> - maven-parent to 37</li>
-<li><a href="https://issues.apache.org/jira/browse/MPH-190">MPH-190</a> - Upgrade Maven Reporting API to 3.1.1</li>
-</ul>
-</li>
-</ul>
-<p>Enjoy,</p>
-<p>-The Apache Maven team</p>
+applied to the current project being built.
 
-    </div>
+Important Notes since Version 3.3.0
+
+* JDK 8 minimum requirement
+* Minimum Maven version 3.2.5
+
+You should specify the version in your project's plugin configuration:
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-help-plugin</artifactId>
+  <version>3.3.0</version>
+</plugin>
+```
+
+You can download the appropriate [sources etc. from the download page](https://maven.apache.org/plugins/maven-help-plugin/download.cgi).
+
+
+[Release Notes - Maven Help Plugin - Version 3.3.0](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317522&version=12345417)
+
+* Bugs:
+
+    * [MPH-164](https://issues.apache.org/jira/browse/MPH-164) - Effective-pom ignores artifact argument
+    * [MPH-171](https://issues.apache.org/jira/browse/MPH-171) - Plugin repositories are not preserved from project pom
+
+* Improvements:
+
+    * [MPH-162](https://issues.apache.org/jira/browse/MPH-162) - Allow all mojos to be configured to produce repeatable output
+    * [MPH-167](https://issues.apache.org/jira/browse/MPH-167) - make build Reproducible
+    * [MPH-170](https://issues.apache.org/jira/browse/MPH-170) - Require Maven 3.1.1 (drop dependency to Maven 3.0)
+
+* Tasks:
+
+    * [MPH-187](https://issues.apache.org/jira/browse/MPH-187) - Upgrade to JDK minimum
+    * [MPH-188](https://issues.apache.org/jira/browse/MPH-188) - Cleanup - Pom
+
+* Dependency upgrades:
+
+    * [MPH-174](https://issues.apache.org/jira/browse/MPH-174) - Upgrade XStream to 1.4.17
+    * [MPH-179](https://issues.apache.org/jira/browse/MPH-179) - Upgrade XStream to 1.4.18
+    * [MPH-186](https://issues.apache.org/jira/browse/MPH-186) - maven-parent to 37
+    * [MPH-190](https://issues.apache.org/jira/browse/MPH-190) -¡ Upgrade Maven Reporting API to 3.1.1
+
+Enjoy,
+
+-The Apache Maven team
+

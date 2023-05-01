@@ -22,19 +22,19 @@ https://maven.apache.org/doxia/doxia-sitetools/download.cgi
 [Release Notes - Maven Doxia base - Version 2.0.0-M6](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317320&version=12352876)
 
 * New Feature:
-  * [DOXIASITETOOLS-291] - Add timezone field to site descriptor PublishDate object and pass onto Velocity tools context
+  * [DOXIASITETOOLS-291](https://issues.apache.org/jira/browse/DOXIASITETOOLS-291) - Add timezone field to site descriptor PublishDate object and pass onto Velocity tools context
 
 * Improvements:
-  * [DOXIASITETOOLS-293] - Remove menu items link in the sidebar to submodule that are not present in the same build (reactor)
-  * [DOXIASITETOOLS-294] - Replace legacy artifact resolution with Maven Resolver
+  * [DOXIASITETOOLS-293](https://issues.apache.org/jira/browse/DOXIASITETOOLS-293) - Remove menu items link in the sidebar to submodule that are not present in the same build (reactor)
+  * [DOXIASITETOOLS-294](https://issues.apache.org/jira/browse/DOXIASITETOOLS-294) - Replace legacy artifact resolution with Maven Resolver
 
 * Tasks:
-  * [DOXIASITETOOLS-272] - Remove support for Maven 1.x style site directory layout
-  * [DOXIASITETOOLS-289] - Remove SiteTool#getParentProject()
-  * [DOXIASITETOOLS-290] - Remove SiteRenderingContext#defaultWindowTitle
+  * [DOXIASITETOOLS-272](https://issues.apache.org/jira/browse/DOXIASITETOOLS-272) - Remove support for Maven 1.x style site directory layout
+  * [DOXIASITETOOLS-289](https://issues.apache.org/jira/browse/DOXIASITETOOLS-289) - Remove SiteTool#getParentProject()
+  * [DOXIASITETOOLS-290](https://issues.apache.org/jira/browse/DOXIASITETOOLS-290) - Remove SiteRenderingContext#defaultWindowTitle
 
 * Dependency upgrade:
-  * [DOXIASITETOOLS-297] - Upgrade components
+  * [DOXIASITETOOLS-297](https://issues.apache.org/jira/browse/DOXIASITETOOLS-297) - Upgrade components
   
 Enjoy,
 - The Apache Maven team 

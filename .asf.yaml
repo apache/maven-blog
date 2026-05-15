@@ -1,7 +1,7 @@
 # see https://s.apache.org/asfyaml
 publish:
-  whoami:    maven-blog
-  type:      blog
+  whoami: maven-blog
+  type: blog
 github:
   description: "Apache Maven Blog"
   homepage: https://blogs.apache.org/maven/
@@ -13,3 +13,16 @@ github:
     squash: true
     merge: false
     rebase: true
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+          - "release/*"
+          - "rel/*"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
